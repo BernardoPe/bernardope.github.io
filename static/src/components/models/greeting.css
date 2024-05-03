@@ -1,0 +1,116 @@
+.greeting {
+    display: flex;
+    text-align: start;
+    max-width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
+.greeting-text-div, .greeting-image-div {
+    flex: 1;
+}
+
+.greeting-title {
+    font-family: "Montserrat Bold", sans-serif;
+    color: var(--color-primary);
+    font-size: 2.3em;
+    color: var(--color-primary);
+    margin-top: 20px;
+    line-height: 1.1;
+}
+
+.greeting-subtitle {
+    font-family: "Montserrat Italic Bold", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-size: 0.9em;
+}
+
+.greeting-text {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    color: var(--color-tertiary);
+}
+
+.greeting-text i {
+    margin-right: 20px;
+}
+
+.greeting-image {
+    display: block;
+    margin-left: 2em;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.social-links {
+    margin-top: 0 auto;
+}
+
+.social-link i {
+    border-radius: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 5px 10px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+}
+
+
+@media (max-width: 1380px) {
+
+    .greeting-title { 
+        font-size: 2.1em;
+    }
+
+    .greeting-subtitle {
+        font-size: 1.5em
+    }
+
+    .greeting-text {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .greeting {
+        display: block;
+        text-align: center;
+    }
+
+    .social-link i {
+        margin: 0 5px;
+        margin-bottom: 20px;
+    }
+
+    .greeting-image {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 1.2em;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .greeting-text {
+        margin: 0 auto;
+        margin-bottom: 1.2em;
+    }
+
+}
+

@@ -1,0 +1,44 @@
+{
+  "greeting": {
+    "name": "Bernardo Pereira",
+    "position": "Computer Science and Engineering Student",
+    "location": "Lisbon, Portugal",
+    "hello": "Hi, welcome to my website!"
+  },
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/bernardope",
+      "icon": "fa-brands fa-github",
+      "bg_color": "#24292E"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/bernardope/",
+      "icon": "fa-brands fa-linkedin",
+      "bg_color": "#0077B5"
+    },
+    {
+      "name": "Gmail",
+      "url": "mailto:bernardo.correia.pereira@gmail.com",
+      "icon": "fa-brands fa-google",
+      "bg_color": "#D44638"
+    }
+  ],
+  "currentEducation": "Currently pursuing a Bachelor's Degree in Computer Science and Engineering at Instituto Superior de Engenharia de Lisboa.",
+  "education": [
+    {
+      "image": "isel.png",
+      "degree": "Bachelor's Degree",
+      "major": "Computer Science and Engineering",
+      "institute": "Instituto Superior de Engenharia de Lisboa | Instituto Politécnico de Lisboa",
+      "duration": "2022 - 2025",
+      "gpa": "16/20",
+      "points": [
+        "Studied concepts of Algorithms and Data Structures, Computer Architecture, Databases, Software Engineering, Computer Networks, Web Development, among others.",
+        "Received a merit scholarship for the 2022/2023 year."
+      ]
+    }
+  ],
+  "resume": "https://www.canva.com/design/DAGD0QOukng/_SdeTb9-pp-zHM5izyuzpA/view?utm_content=DAGD0QOukng&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+}

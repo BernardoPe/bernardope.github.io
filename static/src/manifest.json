@@ -1,0 +1,14 @@
+{
+  "short_name": "Bernardo Pereira",
+  "name": "Bernardo Pereira Portfolio Website",
+  "icons": {
+    "home":{
+      "src": "images/home.png",
+      "type": "image/png"
+    }
+  },
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
