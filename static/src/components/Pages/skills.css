@@ -1,0 +1,71 @@
+.skills {
+    max-width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
+.skills__header {
+    display: flex;
+    font-size: 1.2em;
+    color: var(--color-primary);
+    margin-top: 20px;
+    line-height: 1.1;
+    min-height: 75vh;
+    height: 100%;
+}
+
+.skills__header-img, .skills__header-text {
+    flex: 1;
+}
+
+.skills__header-text {
+    margin-left: 1.5em;
+}
+
+.skills__header-img img {
+    width: 100%; 
+    height: auto;
+}
+
+.skills__title {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 1.8em;
+    color: var(--color-primary);
+    margin-top: 20px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.skills__subtitle {
+    font-family: "Montserrat Italic Bold", sans-serif;
+    line-height: 1.2;
+    font-size: 1em;
+    color: var(--color-tertiary);
+}
+
+@media (max-width: 1380px) {
+    
+    .skills__header {
+        min-height: 40vh;
+    }
+
+}
+
+@media (max-width: 48em) {
+
+    .skills {
+        font-size: 1.5em;
+    }
+
+    .skills__header {
+        min-height: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .skills__header-img {
+        margin-bottom: 2em;
+    }
+
+
+}

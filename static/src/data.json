@@ -25,7 +25,7 @@
       "bg_color": "#D44638"
     }
   ],
-  "currentEducation": "Currently pursuing a Bachelor's Degree in Computer Science and Engineering at Instituto Superior de Engenharia de Lisboa.",
+  "currentEducation": "I am currently pursuing a Bachelor's Degree in Computer Science and Engineering at Instituto Superior de Engenharia de Lisboa.",
   "education": [
     {
       "image": "isel.png",
@@ -37,6 +37,131 @@
       "points": [
         "Studied concepts of Algorithms and Data Structures, Computer Architecture, Databases, Software Engineering, Computer Networks, Web Development, among others.",
         "Received a merit scholarship for the 2022/2023 year."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Programming Languages and Tools",
+      "image": "programming.svg",
+      "list": [
+         {
+          "name": "Kotlin",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+         }, 
+         {
+          "name": "Java",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+         },
+         {
+          "name": "Python",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+         },
+         {
+          "name": "C",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+         },
+         {
+          "name": "JavaScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+         },
+         {
+          "name": "Git",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+         },
+         {
+          "name": "GitHub",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+         },
+         {
+          "name": "IntelliJ IDEA",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
+         },
+         {
+          "name": "PyCharm",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg"
+         },
+         {
+          "name": "Visual Studio Code",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+         }
+      ],
+      "text": [
+          "Familiar with various programming languages, allowing for flexibility in the development of different solutions.",
+          "Experienced with version control systems, such as Git and GitHub."
+      ]
+    }, 
+    {
+      "title": "Web Development",
+      "image": "static_assets.svg",
+      "list": [
+         {
+          "name": "HTML",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+         }, 
+         {
+          "name": "CSS",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+         },
+         {
+          "name": "JavaScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+         },
+         {
+          "name": "React",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+         },
+         {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+         },
+         {
+          "name": "Express",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+         },
+         {
+          "name": "Webpack",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
+         },
+         {
+          "name": "Postman",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+         }
+      ],
+      "text": [
+          "Developed web applications using HTML, CSS, and JavaScript.",
+          "Familiar with modern web development frameworks, such as React and Node.js.",
+          "Familiar with tools like Webpack and Postman for development and testing of web applications."
+      ]
+    },
+    {
+      "title": "Databases and Backend Development",
+      "image": "database.svg",
+      "list": [
+        {
+        "name": "PostgreSQL",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+        }, 
+        {
+        "name": "MongoDB",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+        },
+        {
+        "name": "Elasticsearch",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "Express",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+        }
+      ],
+      "text": [
+          "Experience with relational and non-relational databases, such as PostgreSQL and MongoDB.",
+          "Developed queries and managed databases using Elasticsearch."
       ]
     }
   ],

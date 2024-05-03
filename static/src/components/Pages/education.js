@@ -7,12 +7,12 @@ import EducationCard from '../models/educationCard';
 
 export default function Education() {
     return (
-        <Fade triggerOnce>
+        <Fade>
             <div className="education">
                 <div className="education-header">
                     <div className="education-head-text">
                         <h1 className="education-head-title">Education</h1>
-                        <h2 className="education-head-subtitle">Here are my academic qualifications</h2>
+                        <h2 className="education-head-subtitle">Here are my qualifications</h2>
                         <p className="education-head-desc">{data.currentEducation}</p>
                     </div>
                     <div className="education-head-img"> 

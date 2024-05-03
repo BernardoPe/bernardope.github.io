@@ -8,18 +8,18 @@
     padding-bottom: 50px;
 }
 
+.education-card-img {
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .education-card-img img {
     display: block;
     max-width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    margin: 0 auto;
-}
-
-.education-card-img {
-    border-radius: 5px;
-    width: 20%;
-    height: 20%;
+    object-fit: cover; 
 }
 
 .education-card-box {
@@ -36,36 +36,36 @@
 }
 
 .education-card-head-text {
-    padding: 15px;
+    padding: 25px;
+    text-align: start;
 }
 
 .education-card-title {
     font-family: "Montserrat Bold", sans-serif;
     font-size: 0.8em;
-    padding: 10px;
     margin-top: 1em;
+    margin-left: 1em;
     line-height: 1.1;
 }
 
 .education-card-subtitle {
     font-family: "Montserrat Italic Bold", sans-serif;
     line-height: 1.2;
-    font-size: 0.6em;
-    text-align: start;
+    font-size: 0.7em;
+    margin-left: 1em;
 }
 
 .education-card-head-details {
+    display: flex;
     font-family: "Google Sans Regular", sans-serif;
+    justify-content: space-between;
     font-size: 0.5em;
-    margin-top: 1.5em ;
-    margin-left: auto;
-    margin-right: 1.2em;
-    line-height: 2em;
-    text-align: end;
+    text-align: start;
 }
 
-.education-card-img .education-card-box  {
-    flex: 1;
+.education-card-duration {
+    margin: 0;
+    margin-left: 1.5em;
 }
 
 .education-card-content {
@@ -74,10 +74,9 @@
 }
 
 .education-card-grade {
-    font-size: 0.8em;
-    margin-left: 2em;
-    margin-top: 1.2em;
-    text-align: start;
+    font-size: 0.9em;
+    margin:0;
+    margin-right: 5em;
 }
 
 .education-card-text {
@@ -100,25 +99,28 @@
         padding-bottom: 10px;
     }
 
-    .education-card-img {
-        margin: 0 auto;
-        width: 50%;
-        height: 50%;
-    }
-
     .education-card-head-details {
+        font-size: 0.8em;
+    }
+
+    .education-card-img {
         display: flex;
+        max-width: 100%;
         justify-content: center;
-        margin: 0 auto;
+    }
+
+    .education-card-img img {
+        width: 50%;
+    }
+
+    .education-card-head-text {
+        padding-top: 0;
+        padding-bottom: 0;
         text-align: center;
-        font-size: 1em;
     }
 
-    .education-card-grade {
-        margin: 0 auto;
-    }
-
-    .education-card-duration {
+    .education-card-grade, 
+    .education-card-duration{
         margin: 0 auto;
     }
 
@@ -130,12 +132,17 @@
         text-align: center;
     }
 
+    .education-card-content {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
     .education-card-text {
         margin: 0 auto;
+        margin-left: 1em;
         margin-bottom: 10px;
         font-size: 0.7em;
         line-height: 1.5em;
-        text-align: center;
+        text-align: start;
     }
 
   

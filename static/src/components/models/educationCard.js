@@ -15,10 +15,10 @@ export default function EducationCard({education}) {
                         <div className="education-card-head-text">
                             <h1 className="education-card-title">{education.degree} - {education.major}</h1>
                             <h2 className="education-card-subtitle">{education.institute}</h2>
-                        </div>
                         <div className="education-card-head-details">
                             <h4 className="education-card-duration">{education.duration}</h4>
                             <h4 className="education-card-grade">{education.gpa}</h4>
+                        </div>
                         </div>
                     </div>  
                     <div className="education-card-content">
