@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec37e3a7.css",
+    "main.js": "/static/js/main.529209cf.js",
+    "static/media/about.png": "/static/media/about.6b35262641618917338d.png",
+    "static/media/Motterdam-K74zp.ttf": "/static/media/Motterdam-K74zp.1511a797c70642e55d02.ttf",
+    "static/media/Montserrat-BoldItalic.woff": "/static/media/Montserrat-BoldItalic.1be59373702bc00dd9d5.woff",
+    "static/media/Montserrat-Italic.woff": "/static/media/Montserrat-Italic.83bfa37caed10df34bc2.woff",
+    "static/media/Montserrat-Bold.woff": "/static/media/Montserrat-Bold.12ba843c75312dd308b0.woff",
+    "static/media/Montserrat-Regular.woff": "/static/media/Montserrat-Regular.2ca169c90e53d1d0480b.woff",
+    "static/media/Montserrat-SemiBold.woff": "/static/media/Montserrat-SemiBold.cdffefafe4a4c52c5dea.woff",
+    "static/media/isel.png": "/static/media/isel.b499c7d876c1948ea4b4.png",
+    "static/media/ProductSans-Regular.woff": "/static/media/ProductSans-Regular.0a489488ab3cb2eb11f9.woff",
+    "static/media/ProductSans-BoldItalic.woff": "/static/media/ProductSans-BoldItalic.0d6403dc3af35281bccb.woff",
+    "static/media/ProductSans-Italic.woff": "/static/media/ProductSans-Italic.8c3afe1fc5112ad57bfe.woff",
+    "static/media/ProductSans-Medium.woff": "/static/media/ProductSans-Medium.70f0942277dd5cd83980.woff",
+    "static/media/ProductSans-Bold.woff": "/static/media/ProductSans-Bold.0e179021d036d6dacfba.woff",
+    "static/media/static_assets.svg": "/static/media/static_assets.1c9820781ed508e900c6.svg",
+    "static/media/programming.svg": "/static/media/programming.e1fd023f4182fd3dca55.svg",
+    "static/media/activity.svg": "/static/media/activity.ed9f81fa065b1bb32dc636a7423d3f79.svg",
+    "static/media/science.svg": "/static/media/science.b52a09b71d9d2c076c26c3da8d077a9d.svg",
+    "static/media/version_control.svg": "/static/media/version_control.d829b3da75b42171ca2c.svg",
+    "static/media/maths.svg": "/static/media/maths.ced4e81772b9fc1e6a7d8ff0b46bd679.svg",
+    "static/media/code_review.svg": "/static/media/code_review.5d10afe68ed07b1aa420f96e8b20a921.svg",
+    "static/media/database.svg": "/static/media/database.22cdfd6d58555d31903b.svg",
+    "index.html": "/index.html",
+    "main.ec37e3a7.css.map": "/static/css/main.ec37e3a7.css.map",
+    "main.529209cf.js.map": "/static/js/main.529209cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec37e3a7.css",
+    "static/js/main.529209cf.js"
+  ]
+}
