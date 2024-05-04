@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec37e3a7.css",
+    "main.css": "/static/css/main.8a858ac9.css",
     "main.js": "/static/js/main.cfe57fb0.js",
     "static/media/about.png": "/static/media/about.6b35262641618917338d.png",
     "static/media/Motterdam-K74zp.ttf": "/static/media/Motterdam-K74zp.1511a797c70642e55d02.ttf",
@@ -24,11 +24,11 @@
     "static/media/code_review.svg": "/static/media/code_review.5d10afe68ed07b1aa420f96e8b20a921.svg",
     "static/media/database.svg": "/static/media/database.22cdfd6d58555d31903b.svg",
     "index.html": "/index.html",
-    "main.ec37e3a7.css.map": "/static/css/main.ec37e3a7.css.map",
+    "main.8a858ac9.css.map": "/static/css/main.8a858ac9.css.map",
     "main.cfe57fb0.js.map": "/static/js/main.cfe57fb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec37e3a7.css",
+    "static/css/main.8a858ac9.css",
     "static/js/main.cfe57fb0.js"
   ]
 }
