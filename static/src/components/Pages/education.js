@@ -3,7 +3,7 @@ import "./education.css";
 import educationImage from '../../assets/images/maths.svg';
 import data from "../../data.json";
 import { Fade } from 'react-awesome-reveal';
-import EducationCard from '../models/educationCard';
+import EducationCard from '../Models/educationCard';
 
 export default function Education() {
     return (
@@ -21,9 +21,9 @@ export default function Education() {
                 </div>
                 <div className="education-content"> 
                     <h1 className="education-content-title">Degrees</h1>
-                    {data.education.map((education) => {
+                    {data.education.map((education, index) => {
                         return (
-                            <EducationCard education={education}/>
+                            <EducationCard key={index} education={education}/>
                         );
                     })}
                 </div>

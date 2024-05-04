@@ -1,4 +1,4 @@
-import Greeting from '../models/greeting';
+import Greeting from '../Models/greeting';
 
 export default function Home() {
     return (

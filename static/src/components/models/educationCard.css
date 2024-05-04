@@ -4,6 +4,7 @@
     font-size: 0.8em;
     justify-content: center;
     margin: 0 auto;
+    max-width: 90%;
     color: var(--color-tertiary);
     padding-bottom: 50px;
 }
@@ -41,15 +42,15 @@
 }
 
 .education-card-title {
-    font-family: "Montserrat Bold", sans-serif;
+    font-family: "Google Sans Bold", sans-serif;
     font-size: 0.8em;
     margin-top: 1em;
-    margin-left: 1em;
+    margin-left: 0.85em;
     line-height: 1.1;
 }
 
 .education-card-subtitle {
-    font-family: "Montserrat Italic Bold", sans-serif;
+    font-family: "Google Sans Medium", sans-serif;
     line-height: 1.2;
     font-size: 0.7em;
     margin-left: 1em;
@@ -58,14 +59,15 @@
 .education-card-head-details {
     display: flex;
     font-family: "Google Sans Regular", sans-serif;
-    justify-content: space-between;
+    justify-content: start;
     font-size: 0.5em;
+    margin-left: 1.5em;
     text-align: start;
 }
 
 .education-card-duration {
     margin: 0;
-    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 .education-card-content {
@@ -74,20 +76,24 @@
 }
 
 .education-card-grade {
-    font-size: 0.9em;
+    font-size: 1em;
     margin:0;
     margin-right: 5em;
 }
 
 .education-card-text {
-    font-family: "Google Sans Medium", sans-serif;
-    font-size: 0.5em;
+    font-family: "Google Sans Regular", sans-serif;
+    font-size: 0.6em;
+    font-weight: 600;
     color: var(--color-text);
-    line-height: 35px;
+    line-height: 1.2em;
+    width: 90%;
     margin-bottom: 10px;
     margin-left: 40px;
     margin-right: 2em;
     text-align: start;
+    display: list-item;
+    list-style-type: disc;
 }
 
 
@@ -101,6 +107,16 @@
 
     .education-card-head-details {
         font-size: 0.8em;
+    }
+
+    .education-card-title,
+    .education-card-subtitle,
+    .education-card-head-details {
+        margin: 0 auto;
+    }
+
+    .education-card-title {
+        margin-bottom: 10px;
     }
 
     .education-card-img {

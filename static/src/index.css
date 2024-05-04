@@ -10,6 +10,7 @@
     url("./assets/fonts/Montserrat-Bold.woff") format("woff");
 }
 
+
 @font-face {
     font-family: "Montserrat SemiBold";
     src: local("Montserrat SemiBold"),
@@ -73,18 +74,19 @@ html,
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    --color-primary: #ab3a60;
-    --color-secondary: #EDC7B7;
+    --color-primary: #bc3f68;
+    --color-secondary: #150b07;
     --color-tertiary: #123C69;
+    --color-quaternary: #235c98;
     --color-bg: #EEE2DC;
-    --color-bg-secondary: rgba(196, 171, 171, 0.636);
-    --color-bg-tertiary: #7d685ef3;
-    --color-text: #9f8a8a;
+    --color-bg-secondary: rgba(208, 144, 144, 0.636);
+    --color-bg-tertiary: #431b09f3;
+    --color-text: #455474;
 }
 
 body {
     margin: 0;
-    font: 19px / 23px Montserrat, sans-serif;
+    font: 19px / 23px Google Sans Regular, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -98,7 +100,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 5px; 
+    width: 8px; 
 }
 
 ::-webkit-scrollbar-track {

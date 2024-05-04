@@ -1,8 +1,8 @@
 import React from 'react'
 import './skills.css'
 import data from '../../data'
-import Skill from '../models/skill'
-import skillImage from '../../assets/images/program.svg'
+import Skill from '../Models/skill'
+import skillImage from '../../assets/images/science.svg'
 import { Fade } from 'react-awesome-reveal'
 
 export default function Skills() {
@@ -19,8 +19,8 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className="skills__container">
-                    {data.skills.map((skill) => (
-                        <Skill skill={skill}/>
+                    {data.skills.map((skill, index) => (
+                        <Skill key={index} skill={skill}/>
                     ))}       
                 </div>
             </div>

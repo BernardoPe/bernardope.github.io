@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 
 export default function EducationCard({education}) {
     return (
-        <Fade>
+        <Fade direction='left'>
             <div className="education-card">
                 <div className="education-card-box">
                     <div className="education-card-head">
@@ -22,9 +22,9 @@ export default function EducationCard({education}) {
                         </div>
                     </div>  
                     <div className="education-card-content">
-                        {education.points.map((point) => {
+                        {education.points.map((point, index) => {
                             return (
-                                <p className="education-card-text">{point}</p>
+                                <p key={index} className="education-card-text">{point}</p>
                             );
                         })}  
                     </div>

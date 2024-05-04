@@ -1,9 +1,9 @@
 {
   "short_name": "Bernardo Pereira",
-  "name": "Bernardo Pereira Portfolio Website",
+  "name": "Bernardo Pereira Personal Website",
   "icons": {
     "home":{
-      "src": "images/home.png",
+      "src": "assets/images/icon.png",
       "type": "image/png"
     }
   },
