@@ -129,5 +129,9 @@
         margin-bottom: 1.2em;
     }
 
+    .greeting-text-div, .greeting-image-div {
+        margin-left: 0;
+    }
+
 }
 
