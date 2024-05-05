@@ -12,6 +12,36 @@
     height: 100%;
 }
 
+.split {
+    display: flex;
+}
+
+.split > div {
+    flex: 1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.narrow {
+    max-width: 80%;
+}
+
+.font-text {
+    font-family: "Google Sans Regular", sans-serif;
+}
+
+.font-title {
+    font-family: "Google Sans Bold", sans-serif;
+}
+
+.font-subtitle {
+    font-family: "Google Sans Medium", sans-serif;
+}
+
 @media screen and (max-width: 1380px) {
     .App-content {
         font-size: calc(10px + 1vmin);

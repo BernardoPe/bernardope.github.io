@@ -4,7 +4,6 @@
     font-size: 0.8em;
     justify-content: center;
     margin: 0 auto;
-    max-width: 90%;
     color: var(--color-tertiary);
     padding-bottom: 50px;
 }
@@ -66,19 +65,16 @@
 }
 
 .education-card-duration {
-    margin: 0;
-    margin-right: 1.5em;
+    margin: 0 1.5em 0 0;
 }
 
 .education-card-content {
-    padding: 10px;
-    padding-bottom: 1em;
+    padding: 10px 10px 1em;
 }
 
 .education-card-grade {
     font-size: 1em;
-    margin:0;
-    margin-right: 5em;
+    margin: 0 5em 0 0;
 }
 
 .education-card-text {
@@ -153,9 +149,7 @@
     }
 
     .education-card-text {
-        margin: 0 auto;
-        margin-left: 1em;
-        margin-bottom: 10px;
+        margin: 0 auto 10px 1em;
         font-size: 0.7em;
         line-height: 1.5em;
         text-align: start;

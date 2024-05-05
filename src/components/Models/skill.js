@@ -7,7 +7,7 @@ export default function Skill({skill}) {
          if (!skill.reverse)  {
             return (
               <Fade>
-                  <div className="skill">
+                  <div className="skill split">
                     <SkillImage skill={skill} />
                     <SkillCard skill={skill} />
                   </div>
@@ -16,7 +16,7 @@ export default function Skill({skill}) {
         } else {
             return (
               <Fade>
-                <div className="skill">
+                <div className="skill split">
                   <SkillCard skill={skill} />
                   <SkillImage skill={skill} />
                 </div>

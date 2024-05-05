@@ -7,10 +7,10 @@ import profileImage from '../../assets/images/code_review.svg';
 export default function Greeting() {
     return (
       <Fade triggerOnce>
-        <div className="greeting">
+        <div className="greeting split narrow">
           <div className="greeting-text-div">
-            <h1 className="greeting-title">{data.greeting.name}</h1>
-            <h2 className="greeting-subtitle">
+            <h1 className="greeting-title space-top">{data.greeting.name}</h1>
+            <h2 className="greeting-subtitle space-top">
               {data.greeting.position} 
             </h2>
             <p className="greeting-text">

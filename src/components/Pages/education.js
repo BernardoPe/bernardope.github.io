@@ -8,8 +8,8 @@ import EducationCard from '../Models/educationCard';
 export default function Education() {
     return (
         <Fade>
-            <div className="education">
-                <div className="education-header">
+            <div className="education narrow">
+                <div className="education-header split">
                     <div className="education-head-text">
                         <h1 className="education-head-title">Education</h1>
                         <h2 className="education-head-subtitle">Here are my qualifications</h2>

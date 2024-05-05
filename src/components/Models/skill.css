@@ -1,9 +1,7 @@
 
 .skill {
-    display: flex;
     justify-content: center;
-    padding: 10px;
-    padding-bottom: 5em;
+    padding: 10px 10px 5em;
     text-align: start;
 }
 
@@ -18,10 +16,6 @@
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1.1em;
-}
-
-.skill-image-container, .skill-card-container {
-    flex: 1;
 }
 
 .skill-image {
@@ -45,11 +39,8 @@
 
 .skill-listItem {
     display: flex;
-    margin-right: 0.5em;
     padding: 0;
-    margin: 0 auto;
-    margin-right: 0.5em;
-    margin-left: 0;
+    margin: 0 0.5em 0 0;
 }
 
 .skill-listItem img {
@@ -63,9 +54,7 @@
     font-family: "Google Sans Regular", sans-serif;
     font-size: 0.65em;
     line-height: 1.2em;
-    margin: 0 auto;
-    margin-left: 1.1em;
-    margin-bottom: 0.5em;
+    margin: 0 auto 0.5em 1.1em;
     color: var(--color-text);
     display: list-item;
     list-style-type: disc;

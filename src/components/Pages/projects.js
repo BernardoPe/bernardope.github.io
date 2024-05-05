@@ -8,8 +8,8 @@ import { Fade } from 'react-awesome-reveal'
 export default function Projects() {
     return (
         <Fade triggerOnce>
-        <div className='projects'>
-            <div className='projects-header'>
+        <div className='projects narrow'>
+            <div className='projects-header split'>
                 <div className='projects-header-text'>
                     <h1 className='projects-title'>Projects</h1>
                     <h2 className='projects-subtitle'>Here are some things I've worked on</h2>
@@ -22,7 +22,7 @@ export default function Projects() {
                     <img alt='projects' src={ProjectImage} />
                 </div>
             </div>
-            <div className='projects-content'>
+            <div className='projects-content split'>
                 {data.projects.map((project, index) => {
                     return <ProjectCard key={index} project={project}/>
                 })}

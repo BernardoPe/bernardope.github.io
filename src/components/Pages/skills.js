@@ -8,8 +8,8 @@ import { Fade } from 'react-awesome-reveal'
 export default function Skills() {
     return (
         <Fade>
-            <div className="skills">
-                <div className="skills__header">
+            <div className="skills narrow">
+                <div className="skills__header split">
                       <div className="skills__header-text">
                         <h1 className="skills__title">Skills</h1>
                         <h2 className="skills__subtitle">Here are some of my skills</h2>

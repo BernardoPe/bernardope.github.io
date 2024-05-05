@@ -6,21 +6,15 @@
     justify-content: center;
     margin: 0 auto;
     font-size: 1.2em;
-    max-width: 80%;
 }
 
 .education-header {
-    display: flex;
     font-size: 1.2em;
     color: var(--color-primary);
     margin-top: 20px;
     line-height: 1.1;
     height: 100%;
     margin-bottom: 1em;
-}
-
-.education-head-text, .education-head-img {
-    flex: 1;
 }
 
 .education-head-text {
@@ -39,9 +33,7 @@
     max-width: 70%;
     max-height: 70%;
     border-radius: 5px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin: 20px auto 10px;
     object-fit: cover;
 }
 
@@ -102,7 +94,6 @@
         margin-top: 0;
     }
     .education-head-text {
-        margin-right: 0;
         margin: 0 auto;
     }
     .education-head-img img {

@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 export default function About() {
     return (
       <Fade>
-        <div className="about">
-          <div className="about-header">
+        <div className="about narrow">
+          <div className="about-header split">
             <div className="about-header-text">
               <h1 className="about-title">About Me</h1>
               <div className="about-desc">
@@ -22,7 +22,7 @@ export default function About() {
                 })}
               </div>
             </div>
-            <div className="about-header-image">
+            <div className="about-header-image center">
               <img alt="about" src={aboutImage} className="about-image" />
             </div>
           </div>

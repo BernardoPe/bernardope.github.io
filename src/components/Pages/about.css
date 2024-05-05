@@ -1,19 +1,14 @@
 .about {
-    width: 80%;
     margin: 0 auto;
     text-align: start
 }
 
 .about-header {
-    display: flex;
     font-size: 1.3em;
     color: var(--color-primary);
     line-height: 1.2;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-left: 1.5em;
+    margin: 0 auto 0 1.5em;
     text-align: start;
 }
 
@@ -29,28 +24,19 @@
 .about-point {
     font-family: "Google Sans Regular", sans-serif;
     color: var(--color-text);
-    margin: 0;
-    margin-bottom: 0.5em;
+    margin: 0 0 0.5em;
 }
 
 .about-desc {
     font-family: "Google Sans Regular", sans-serif;
-    display: flex;
     flex-direction: column;
     font-size: 0.7em;
     color: var(--color-tertiary);
     line-height: 1.1em;
 }
 
-.about-header-image, .about-header-text {
-    flex: 1;
-}
-
 .about-header-image {
     margin-top: 1.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-image {
@@ -78,11 +64,9 @@
     }
 
     .about-header-text {
-        margin: 0 auto;
-        margin-bottom: 2em;
+        margin: 0 auto 2em;
     }
 
-  
     .about-header-image {
         margin-left: 0;
     }
