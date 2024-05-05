@@ -26,7 +26,7 @@ export default function About() {
               <img alt="about" src={aboutImage} className="about-image" />
             </div>
           </div>
-          <div className="social-links">
+          <div className="social-links center">
             {data.social.map((social) => {
               return (
                 <a key={social.name} href={social.url} className="social-link">

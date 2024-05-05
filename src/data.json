@@ -96,48 +96,52 @@
         "I'm familiar with various programming languages, which gives me flexibility in the development of different solutions.",
         "I'm experienced with version control systems, such as Git and GitHub, and I have used tools like IntelliJ IDEA, PyCharm, and Visual Studio Code for development."
       ]
-    }, 
+    },
     {
       "title": "Web Development",
       "image": "static_assets.svg",
       "list": [
-         {
+        {
           "name": "HTML",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-         }, 
-         {
+        },
+        {
           "name": "CSS",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-         },
-         {
+        },
+        {
           "name": "JavaScript",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-         },
-         {
+        },
+        {
+          "name": "Handlebars",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/handlebars/handlebars-original.svg"
+        },
+        {
           "name": "React",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-         },
-         {
+        },
+        {
           "name": "Node.js",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-         },
-         {
+        },
+        {
           "name": "Express",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-         },
-         {
+        },
+        {
           "name": "Webpack",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
-         },
-         {
+        },
+        {
           "name": "Postman",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-         }
+        }
       ],
       "text": [
-          "I have Developed web applications using HTML, CSS, and JavaScript.",
-          "I am familiar with modern web development frameworks like React for building user interfaces.",
-          "I am familiar with tools like Webpack and Postman for development and testing of web applications."
+        "I have Developed web applications using HTML, CSS, and JavaScript.",
+        "I am familiar with modern web development frameworks like React for building user interfaces.",
+        "I am familiar with tools like Webpack and Postman for development and testing of web applications."
       ]
     },
     {
@@ -176,7 +180,7 @@
     {
       "title": "Musyk",
       "duration": "Aug. 2023 - Present",
-      "link": "https://github.com/bernardope/musyk", 
+      "link": "https://github.com/bernardope/musyk",
       "skills": [
         {
           "name": "JavaScript",
