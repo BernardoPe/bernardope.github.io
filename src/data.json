@@ -233,6 +233,26 @@
         "An application that allows users to play the game of Go. This application was developed using Object-Oriented Programming concepts.",
         "The game logic was implemented in Kotlin, and the graphical UI was implemented using Jetpack Compose. MongoDB was also used to store game states."
       ]
+    },
+    {
+      "title": "Yamlify",
+      "duration": "Jan. 2023 - Jun. 2023",
+      "link": "https://github.com/bernardope/Yamlify",
+        "skills": [
+            {
+            "name": "Java",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+            },
+            {
+            "name": "Kotlin",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+            }
+        ],
+        "points": [
+            "A simple YAML parser that creates Objects from YAML files.",
+            "Implemented using Reflection through the Reflection API and bytecode generation through the Cojen/Maker library in the JVM.",
+            "Analysis of performance differences between the two approaches using JMH benchmarking."
+        ]
     }
   ],
   "resume": "https://www.canva.com/design/DAGD0QOukng/_SdeTb9-pp-zHM5izyuzpA/view?utm_content=DAGD0QOukng&utm_campaign=designshare&utm_medium=link&utm_source=editor"
