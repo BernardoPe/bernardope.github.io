@@ -78,6 +78,11 @@
 .projects-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.projects-content > * { /* Target all direct children */
+  min-width: 10em;
 }
 
 @media (max-width: 48em) {
