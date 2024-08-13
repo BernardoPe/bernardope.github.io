@@ -231,7 +231,7 @@
       ],
       "points": [
         "An application that allows users to play the game of Go. This application was developed using Object-Oriented Programming concepts.",
-        "The game logic was implemented in Kotlin, and the graphical UI was implemented using Jetpack Compose. MongoDB was also used to store game states."
+        "The game logic was implemented in Kotlin, and the graphical UI was implemented using Jetpack Compose. MongoDB was also used to store game states and support online play."
       ]
     },
     {
