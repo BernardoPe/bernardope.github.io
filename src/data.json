@@ -197,6 +197,36 @@
       ]
     },
     {
+      "title": "Sessions",
+      "duration": "Mar 2024 - Jun 2024",
+      "link": "https://github.com/bernardope/Sessions",
+      "skills": [
+        {
+          "name": "Kotlin",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "HTML",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        }
+      ],
+      "points": [
+        "A multiplayer game session management app featuring a Restful API developed in Kotlin with PostgreSQL for data storage, and a Single Page Application built with HTML, CSS, and JavaScript."
+      ]
+    },
+    {
       "title": "Access Control System",
       "duration": "Mar. 2023 - Jun. 2023",
       "link": "https://github.com/bernardope/accesscontrolsystem",
@@ -253,36 +283,6 @@
             "Implemented using Reflection through the Reflection API and bytecode generation through the Cojen/Maker library in the JVM.",
             "Analysis of performance differences between the two approaches with JMH benchmarking."
         ]
-    },
-    {
-      "title": "Sessions",
-      "duration": "Mar 2024 - Jun 2024",
-      "link": "https://github.com/bernardope/Sessions",
-      "skills": [
-        {
-          "name": "Kotlin",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
-        },
-        {
-          "name": "PostgreSQL",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-        },
-        {
-          "name": "HTML",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-        },
-        {
-          "name": "CSS",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-        }
-      ],
-      "points": [
-        "A multiplayer game session management app featuring an API developed in Kotlin with PostgreSQL for data storage, and a Single Page Application built with HTML, CSS, and JavaScript."
-      ]
     }
   ],
   "resume": "https://www.canva.com/design/DAGD0QOukng/_SdeTb9-pp-zHM5izyuzpA/view?utm_content=DAGD0QOukng&utm_campaign=designshare&utm_medium=link&utm_source=editor"
