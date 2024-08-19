@@ -46,8 +46,9 @@ function SkillCard({ skill }) {
         <h2>{skill.title}</h2>
         <ul className="skill-list">
           {skill.list.map((item, index) => (
-            <li className="skill-listItem" key={index}>
+            <li className="skill-listItem tooltip" key={index}>
               <img key={index} src={item.icon} alt={item.name} />
+              <span className="tooltiptext">{item.name}</span>
             </li>
           ))}
         </ul>
