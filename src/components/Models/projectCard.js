@@ -19,12 +19,10 @@ export default function ProjectCard({ project }) {
               <ul className="project-card-skills">
                 {project.skills.map((skill, index) => {
                   return (
-                    <img
-                      key={index}
-                      src={skill.icon}
-                      alt={skill.name}
-                      className="project-card-skill"
-                    />
+                  <li className="skill-listItem tooltip" key={index}>
+                    <img key={index} src={skill.icon} alt={skill.name} className="project-card-skill"/>
+                    <span className="tooltiptext">{skill.name}</span>
+                  </li>
                   );
                 })}
               </ul>
