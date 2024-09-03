@@ -139,7 +139,7 @@
         }
       ],
       "text": [
-        "I have Developed web applications using HTML, CSS, and JavaScript.",
+        "I have developed web applications using HTML, CSS, and JavaScript.",
         "I am familiar with modern web development frameworks like React for building user interfaces.",
         "I am familiar with tools like Webpack and Postman for development and testing of web applications."
       ]
@@ -168,11 +168,15 @@
         {
           "name": "Express",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+        },
+        {
+            "name": "DBeaver",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg"
         }
       ],
       "text": [
-        "I have experience with relational and non-relational databases, such as PostgreSQL and MongoDB.",
-        "I have used Node.js and Express.js for RESTful API development, while also using Elasticsearch for storage and search of data."
+        "I have experience with relational and non-relational databases, such as PostgresSQL, MongoDB, and ElasticSearch.",
+        "I have used Node.js and Express for backend development, and I have experience with tools like DBeaver for database management."
       ]
     }
   ],
