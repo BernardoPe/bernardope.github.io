@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2b671ba0.css",
-    "main.js": "/static/js/main.d14372ca.js",
+    "main.js": "/static/js/main.3459dbb2.js",
     "static/media/about.png": "/static/media/about.6b35262641618917338d.png",
     "static/media/Motterdam-K74zp.ttf": "/static/media/Motterdam-K74zp.1511a797c70642e55d02.ttf",
     "static/media/Montserrat-BoldItalic.woff": "/static/media/Montserrat-BoldItalic.1be59373702bc00dd9d5.woff",
@@ -25,10 +25,10 @@
     "static/media/database.svg": "/static/media/database.22cdfd6d58555d31903b.svg",
     "index.html": "/index.html",
     "main.2b671ba0.css.map": "/static/css/main.2b671ba0.css.map",
-    "main.d14372ca.js.map": "/static/js/main.d14372ca.js.map"
+    "main.3459dbb2.js.map": "/static/js/main.3459dbb2.js.map"
   },
   "entrypoints": [
     "static/css/main.2b671ba0.css",
-    "static/js/main.d14372ca.js"
+    "static/js/main.3459dbb2.js"
   ]
 }
