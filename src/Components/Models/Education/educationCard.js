@@ -11,7 +11,7 @@ export default function EducationCard({ education }) {
             <div className="education-card-img">
               <img
                 alt="education"
-                src={require(`../../assets/images/` + education.image)}
+                src={require(`../../../Assets/Images/` + education.image)}
               />
             </div>
             <div className="education-card-head-text">

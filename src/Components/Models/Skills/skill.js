@@ -30,7 +30,7 @@ function SkillImage({ skill }) {
     <Slide direction={slide} triggerOnce className="skill-image-container">
       <div className="skill-image">
         <img
-          src={require(`../../assets/images/` + skill.image)}
+          src={require(`../../../Assets/Images/` + skill.image)}
           alt={skill.title}
         />
       </div>
