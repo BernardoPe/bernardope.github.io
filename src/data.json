@@ -134,6 +134,10 @@
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
         },
         {
+          "name": "Nginx",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg"
+        },
+        {
           "name": "Webpack",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
         },
@@ -190,91 +194,41 @@
   ],
   "projects": [
     {
-      "title": "Musyk",
-      "duration": "Aug. 2023 - Present",
-      "link": "https://github.com/bernardope/musyk",
+      "title": "Instant Messaging",
+      "duration": "Sep. 2024 - Dec. 2024",
+      "link": "https://github.com/bernardope/Instant-Messaging",
       "skills": [
-        {
-          "name": "Typescript",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-        },
-        {
-          "name": "Node.js",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-        }
-      ],
-      "points": [
-        "A discord bot that allows users to play music in voice channels. It was developed using the Discord.js library and the discord-player framework.",
-        "It can play music from Youtube, Spotify, and Soundcloud, and has features like queue management, volume control, and song skipping."
-      ]
-    },
-    {
-      "title": "Sessions",
-      "duration": "Mar 2024 - Jun 2024",
-      "link": "https://github.com/bernardope/Sessions",
-      "skills": [
-        {
+          {
           "name": "Kotlin",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
-        },
-        {
+          },
+          {
+          "name": "Spring",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+          },
+          {
           "name": "PostgreSQL",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-        },
-        {
-          "name": "HTML",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-        },
-        {
-          "name": "CSS",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-        }
-      ],
-      "points": [
-        "A multiplayer game session management app featuring a Restful API developed in Kotlin with PostgreSQL for data storage, and a Single Page Application built with HTML, CSS, and JavaScript."
-      ]
-    },
-    {
-      "title": "Access Control System",
-      "duration": "Mar. 2023 - Jun. 2023",
-      "link": "https://github.com/bernardope/accesscontrolsystem",
-      "skills": [
-        {
-          "name": "Kotlin",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
-        }
-      ],
-      "points": [
-        "An Access Control System that allows users to access restricted areas via PIN code. This system was developed using VHDL for hardware, and Kotlin for software.",
-        "The system was tested on an Intel DE10-Lite FPGA board."
-      ]
-    },
-    {
-      "title": "Compose Go",
-      "duration": "Sep. 2023 - Jan. 2024",
-      "link": "https://github.com/bernardope/composego",
-      "skills": [
-        {
-          "name": "Kotlin",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
-        },
-        {
-          "name": "Jetpack Compose",
+          },
+          {
+          "name": "React",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          },
+          {
+          "name": "TypeScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          },
+          {
+          "name": "Android",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
-        },
-        {
-          "name": "MongoDB",
-          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-        }
-      ],
-      "points": [
-        "An application that allows users to play the game of Go. This application was developed using Object-Oriented Programming concepts.",
-        "The game logic was implemented in Kotlin, and the graphical UI was implemented using Jetpack Compose. MongoDB was also used to store game states and support online play."
-      ]
+          }
+        ],
+        "points": [
+            "A full-stack application that allows users to send messages to each other in real-time.",
+            "Developed a RESTful API using Spring Boot, JPA and PostgreSQL for data storage.",
+            "Implemented Server-Sent Events for real-time communication between clients and the server.",
+            "Developed a web client using React and TypeScript, and an Android client using Kotlin and Jetpack Compose."
+        ]
     },
     {
       "title": "Yamlify",
@@ -295,6 +249,24 @@
             "Implemented using Reflection through the Reflection API and bytecode generation through the Cojen/Maker library in the JVM.",
             "Analysis of performance differences between the two approaches with JMH benchmarking."
         ]
+    },
+    {
+      "title": "Musyk",
+      "duration": "Aug. 2023 - Present",
+      "link": "https://github.com/bernardope/musyk",
+      "skills": [
+        {
+          "name": "Typescript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        }
+      ],
+      "points": [
+        "A discord bot that allows users to play music in voice channels. It was developed using the Discord.js library and the discord-player framework."
+      ]
     }
   ],
   "resume": "https://www.canva.com/design/DAGD0QOukng/_SdeTb9-pp-zHM5izyuzpA/view?utm_content=DAGD0QOukng&utm_campaign=designshare&utm_medium=link&utm_source=editor"
