@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
-import aboutImage from '../../assets/images/about.png';
-import data from '../../data.json';
+import aboutImage from '../../../Assets/Images/about.png';
+import data from '../../../data.json';
 import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 
@@ -29,7 +29,7 @@ export default function About() {
           <div className="social-links center">
             {data.social.map((social) => {
               return (
-                <a key={social.name} href={social.url} className="social-link">
+                <a key={social.name} href={social.url} className="social-link" target={"_blank"} rel={"noreferrer"}>
                   <i
                     className={social.icon}
                     style={{ backgroundColor: social.bg_color }}

@@ -1,8 +1,8 @@
 import React from "react";
 import "./skills.css";
-import data from "../../data";
-import Skill from "../Models/skill";
-import skillImage from "../../assets/images/science.svg";
+import data from "../../../data.json";
+import Skill from "../../Models/Skills/skill";
+import skillImage from "../../../Assets/Images/science.svg";
 import { Fade } from "react-awesome-reveal";
 
 export default function Skills() {

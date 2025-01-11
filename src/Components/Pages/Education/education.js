@@ -1,9 +1,9 @@
 import React from "react";
 import "./education.css";
-import educationImage from "../../assets/images/maths.svg";
-import data from "../../data.json";
+import educationImage from "../../../Assets/Images/maths.svg";
+import data from "../../../data.json";
 import { Fade } from "react-awesome-reveal";
-import EducationCard from "../Models/educationCard";
+import EducationCard from "../../Models/Education/educationCard";
 
 export default function Education() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectCard from "../Models/projectCard";
-import data from "../../data.json";
+import ProjectCard from "../../Models/Projects/projectCard";
+import data from "../../../data.json";
 import "./projects.css";
-import ProjectImage from "../../assets/images/activity.svg";
+import ProjectImage from "../../../Assets/Images/activity.svg";
 import { Fade } from "react-awesome-reveal";
 
 export default function Projects() {
@@ -15,7 +15,7 @@ export default function Projects() {
             <h2 className="projects-subtitle">
               Here are some things I've worked on
             </h2>
-            <a className="projects-reference" href={data.github}>
+            <a className="projects-reference" href={data.github} target={"_blank"} rel={"noreferrer"}>
               <i className="fa fa-github"></i>
               <p>GitHub</p>
             </a>

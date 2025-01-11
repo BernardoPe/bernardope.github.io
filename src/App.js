@@ -1,13 +1,13 @@
 import { Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Pages/home";
+import Home from "./Components/Pages/Home/home";
 import { Route } from "react-router-dom";
-import Header from "./components/Layouts/Header";
-import Education from "./components/Pages/education";
-import Skills from "./components/Pages/skills";
-import Footer from "./components/Layouts/footer";
-import Projects from "./components/Pages/projects";
-import About from "./components/Pages/about";
+import Header from "./Components/Layouts/Header/Header";
+import Education from "./Components/Pages/Education/education";
+import Skills from "./Components/Pages/Skills/skills";
+import Footer from "./Components/Layouts/Footer/footer";
+import Projects from "./Components/Pages/Projects/projects";
+import About from "./Components/Pages/About/about";
 
 function App() {
   return (

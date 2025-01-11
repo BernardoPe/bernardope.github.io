@@ -11,7 +11,7 @@ export default function ProjectCard({ project }) {
             <div className="project-card-head-text">
               <div className="project-card-top">
                 <h1 className="project-card-title">{project.title}</h1>
-                <a href={project.link} className="project-card-link">
+                <a href={project.link} className="project-card-link" target={"_blank"} rel={"noreferrer"}>
                   <i className="fa fa-github"></i>
                 </a>
               </div>

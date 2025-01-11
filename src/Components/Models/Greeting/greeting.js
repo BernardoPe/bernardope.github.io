@@ -1,8 +1,8 @@
 import React from "react";
 import "./greeting.css";
-import data from "../../data.json";
+import data from "../../../data.json";
 import { Fade } from "react-awesome-reveal";
-import profileImage from "../../assets/images/code_review.svg";
+import profileImage from "../../../Assets/Images/code_review.svg";
 
 export default function Greeting() {
   return (
@@ -20,7 +20,7 @@ export default function Greeting() {
           <div className="social-links">
             {data.social.map((social) => {
               return (
-                <a key={social.name} href={social.url} className="social-link">
+                <a key={social.name} href={social.url} className="social-link" target={"_blank"} rel={"noreferrer"}>
                   <i
                     className={social.icon}
                     style={{ backgroundColor: social.bg_color }}

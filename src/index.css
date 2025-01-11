@@ -1,67 +1,67 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.woff") format("woff");
+    url("Assets/Fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat Bold";
   src: local("Montserrat Bold"),
-    url("./assets/fonts/Montserrat-Bold.woff") format("woff");
+    url("Assets/Fonts/Montserrat-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat SemiBold";
   src: local("Montserrat SemiBold"),
-    url("./assets/fonts/Montserrat-SemiBold.woff") format("woff");
+    url("Assets/Fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat Italic Bold";
   src: local("Montserrat Italic Bold"),
-    url("./assets/fonts/Montserrat-BoldItalic.woff") format("woff");
+    url("Assets/Fonts/Montserrat-BoldItalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat Italic";
   src: local("Montserrat Italic"),
-    url("./assets/fonts/Montserrat-Italic.woff") format("woff");
+    url("Assets/Fonts/Montserrat-Italic.woff") format("woff");
 }
 
 @font-face {
   font-family: "Google Sans Bold";
   src: local("Google Sans Bold"),
-    url("./assets/fonts/ProductSans-Bold.woff") format("woff");
+    url("Assets/Fonts/ProductSans-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Google Sans Bold Italic";
   src: local("Google Sans Bold Italic"),
-    url("./assets/fonts/ProductSans-BoldItalic.woff") format("woff");
+    url("Assets/Fonts/ProductSans-BoldItalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "Motterdam";
   src: local("Motterdam"),
-    url("./assets/fonts/Motterdam-K74zp.ttf") format("woff");
+    url("Assets/Fonts/Motterdam-K74zp.ttf") format("woff");
 }
 
 @font-face {
   font-family: "Google Sans Italic";
   src: local("Google Sans Italic"),
-    url("./assets/fonts/ProductSans-Italic.woff") format("woff");
+    url("Assets/Fonts/ProductSans-Italic.woff") format("woff");
 }
 
 @font-face {
   font-family: "Google Sans Medium";
   src: local("Google Sans Medium"),
-    url("./assets/fonts/ProductSans-Medium.woff") format("woff");
+    url("Assets/Fonts/ProductSans-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Google Sans Regular";
   src: local("Google Sans Regular"),
-    url("./assets/fonts/ProductSans-Regular.woff") format("woff");
+    url("Assets/Fonts/ProductSans-Regular.woff") format("woff");
 }
 
 code {
