@@ -90,9 +90,9 @@
   font-family: "Google Sans Regular", sans-serif;
   font-size: 0.6em;
   color: var(--color-text);
-  line-height: 1.2em;
+  line-height: 1.15em;
   width: 90%;
-  font-weight: 600;
+  text-align: justify;
   margin: 0 auto 10px;
 }
 
