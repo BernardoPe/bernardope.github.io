@@ -1,0 +1,93 @@
+/* CSS Variables for Light and Dark Themes */
+:root {
+  /* Light theme colors */
+  --light-bg-primary: #f8fafc;
+  --light-bg-secondary: #ffffff;
+  --light-bg-tertiary: #f1f5f9;
+  --light-text-primary: #1e293b;
+  --light-text-secondary: #475569;
+  --light-text-tertiary: #64748b;
+  --light-border: #cbd5e1;
+  --light-border-secondary: #e2e8f0;
+  --light-shadow: rgba(0, 0, 0, 0.1);
+  --light-shadow-hover: rgba(0, 0, 0, 0.15);
+
+  /* Dark theme colors */
+  --dark-bg-primary: #0f172a;
+  --dark-bg-secondary: #1e293b;
+  --dark-bg-tertiary: #334155;
+  --dark-text-primary: #f8fafc;
+  --dark-text-secondary: #94a3b8;
+  --dark-text-tertiary: #64748b;
+  --dark-border: #334155;
+  --dark-border-secondary: #475569;
+  --dark-shadow: rgba(0, 0, 0, 0.3);
+  --dark-shadow-hover: rgba(0, 0, 0, 0.4);
+
+  /* Accent colors */
+  --primary-color: #10b981;
+  --primary-light: #34d399;
+  --primary-dark: #059669;
+  --secondary-color: #3b82f6;
+  --secondary-light: #60a5fa;
+  --secondary-dark: #2563eb;
+}
+
+/* Light theme overrides */
+[data-theme='light'] {
+  --bg-primary: var(--light-bg-primary);
+  --bg-secondary: var(--light-bg-secondary);
+  --bg-tertiary: var(--light-bg-tertiary);
+  --text-primary: var(--light-text-primary);
+  --text-secondary: var(--light-text-secondary);
+  --text-tertiary: var(--light-text-tertiary);
+  --border-color: var(--light-border);
+  --border-secondary: var(--light-border-secondary);
+  --shadow-color: var(--light-shadow);
+  --shadow-hover: var(--light-shadow-hover);
+}
+
+/* Dark theme overrides */
+[data-theme='dark'] {
+  --bg-primary: var(--dark-bg-primary);
+  --bg-secondary: var(--dark-bg-secondary);
+  --bg-tertiary: var(--dark-bg-tertiary);
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --text-tertiary: var(--dark-text-tertiary);
+  --border-color: var(--dark-border);
+  --border-secondary: var(--dark-border-secondary);
+  --shadow-color: var(--dark-shadow);
+  --shadow-hover: var(--dark-shadow-hover);
+}
+
+/* Auto theme based on system preference */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: var(--light-bg-primary);
+    --bg-secondary: var(--light-bg-secondary);
+    --bg-tertiary: var(--light-bg-tertiary);
+    --text-primary: var(--light-text-primary);
+    --text-secondary: var(--light-text-secondary);
+    --text-tertiary: var(--light-text-tertiary);
+    --border-color: var(--light-border);
+    --border-secondary: var(--light-border-secondary);
+    --shadow-color: var(--light-shadow);
+    --shadow-hover: var(--light-shadow-hover);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: var(--dark-bg-primary);
+    --bg-secondary: var(--dark-bg-secondary);
+    --bg-tertiary: var(--dark-bg-tertiary);
+    --text-primary: var(--dark-text-primary);
+    --text-secondary: var(--dark-text-secondary);
+    --text-tertiary: var(--dark-text-tertiary);
+    --border-color: var(--dark-border);
+    --border-secondary: var(--dark-border-secondary);
+    --shadow-color: var(--dark-shadow);
+    --shadow-hover: var(--dark-shadow-hover);
+  }
+}

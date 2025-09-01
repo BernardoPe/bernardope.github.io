@@ -1,87 +1,103 @@
-.App {
-  min-height: 100vh;
-  text-align: center;
-  background-color: var(--color-bg);
+#root {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-.App-content {
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: var(--color-primary);
-  height: 100%;
-}
-
-.split {
-  display: flex;
-}
-
-.split > div {
-  flex: 1;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.narrow {
-  max-width: 80%;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  justify-content: center;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 0; 
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-  text-align: center;
-  border-radius: 6px;
-  font-size: 0.5em;
-  padding: 5px;
-  white-space: nowrap; 
-  min-height: 1em;
-  line-height: 1.2em; 
-  opacity: 0; 
-  position: absolute;
-  z-index: 1;
-  top: -50%; 
-  transition: width 0.3s ease, top 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  width: fit-content; 
-  top: -90%; 
-  opacity: 1; 
-}
-
-.font-text {
-  font-family: "Google Sans Regular", sans-serif;
-}
-
-.font-title {
-  font-family: "Google Sans Bold", sans-serif;
-}
-
-.font-subtitle {
-  font-family: "Google Sans Medium", sans-serif;
-}
-
-@media screen and (max-width: 1380px) {
-  .App-content {
-    font-size: calc(10px + 1vmin);
+@media (max-width: 599px) {
+  #root {
+    padding: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .App-content {
-    font-size: calc(10px + 0.5vmin);
+@media (min-width: 600px) {
+  #root {
+    max-width: 1280px;
   }
+}
+
+@media (min-width: 1921px) {
+  #root {
+    max-width: 1440px;
+  }
+}
+
+@font-face {
+  font-family: 'Motterdam';
+  src: url('assets/fonts/Motterdam.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono Bold';
+  src: url('assets/fonts/JetBrainsMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono BoldItalic';
+  src: url('assets/fonts/JetBrainsMono-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono ExtraBold';
+  src: url('assets/fonts/JetBrainsMono-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono ExtraBoldItalic';
+  src: url('assets/fonts/JetBrainsMono-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono Italic';
+  src: url('assets/fonts/JetBrainsMono-ExtraLightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono Light';
+  src: url('assets/fonts/JetBrainsMono-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono Medium';
+  src: url('assets/fonts/JetBrainsMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: url('assets/fonts/JetBrainsMono-Regular.ttf');
+}
+
+.logo {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }

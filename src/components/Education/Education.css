@@ -1,0 +1,293 @@
+@import '../../styles/shared.css';
+
+/* Education Section Specific Styles */
+
+.education-degree {
+  font-weight: bold !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.education-institution {
+  margin-bottom: 0.5rem !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+}
+
+/* Education Card Specific Styles */
+.education-card {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  padding: 0;
+  text-align: start;
+}
+
+.education-description {
+  line-height: 1.7;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem;
+}
+
+.education-card-section {
+  margin-bottom: 1rem !important;
+}
+
+.education-card-section:last-child {
+  margin-bottom: 0;
+}
+
+.education-courses-section {
+  padding-top: 1rem;
+}
+
+/* Final Project Styles */
+.final-project-container {
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem 0;
+  border: 2px solid;
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.05), rgba(156, 39, 176, 0.05));
+  position: relative;
+  overflow: hidden;
+}
+
+.final-project-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1976d2, #9c27b0, #f57c00);
+}
+
+.final-project-title-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.final-project-title-and-grade {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.final-project-title {
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+}
+
+.final-project-description {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.final-project-github-btn {
+  width: 32px;
+  height: 32px;
+  transition: color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Achievements Styles */
+.achievements-container {
+  margin-bottom: 1rem;
+}
+
+.achievement-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.achievement-text {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Bullet Styles */
+.bullet-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bullet-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.bullet-text {
+  font-weight: bold !important;
+}
+
+/* Education-specific Responsive Design */
+@media (max-width: 767px) {
+  .education-card {
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    max-width: 100%;
+  }
+
+  .education-description {
+    text-align: center;
+    font-size: 0.8rem !important;
+  }
+
+  .education-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .education-degree {
+    font-size: 1rem !important;
+    text-align: center !important;
+  }
+
+  .education-institution {
+    font-size: 0.85rem !important;
+    text-align: center !important;
+  }
+
+  .final-project-container {
+    padding: 1.5rem;
+    text-align: left; /* Keep project details left-aligned for readability */
+  }
+
+  .final-project-title-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .final-project-title-and-grade {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .final-project-title {
+    text-align: center !important;
+  }
+
+  .final-project-description {
+    text-align: center !important;
+  }
+
+  .achievements-container {
+    text-align: left; /* Keep achievements left-aligned */
+  }
+
+  .achievement-item {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .achievement-text {
+    text-align: left;
+  }
+
+  .bullet-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bullet-text {
+    text-align: left !important;
+  }
+
+  .education-courses {
+    justify-content: center;
+  }
+
+  .final-project-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .final-project-meta {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .education-logo {
+    width: 180px;
+    height: 90px;
+  }
+
+  .education-degree {
+    font-size: 1.5rem !important;
+  }
+
+  .education-institution {
+    font-size: 1.125rem !important;
+  }
+}
+
+/* Simple Courses Styles */
+.education-section-title {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.education-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.education-course {
+  padding: 0.25rem 0.65rem !important;
+  border-radius: 12px !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: default !important;
+}
+
+.final-project-simple {
+  margin-top: 0.75rem;
+}
+
+.final-project-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.final-project-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.final-project-title {
+  margin-bottom: 0 !important;
+}
+
+.final-project-description {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
