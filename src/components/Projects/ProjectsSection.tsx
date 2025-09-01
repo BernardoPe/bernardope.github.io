@@ -6,8 +6,7 @@ import {
   Article as ArticleIcon,
 } from '@mui/icons-material';
 import { Section } from '../Section';
-import { projectsData } from '../../data/projects';
-import type { Project } from '../../data/projects';
+import { data, type Project } from '../../data';
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 import './Projects.css';
 
@@ -244,7 +243,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project })
 };
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ sectionRef }) => {
-  const sortedProjects = [...projectsData].sort((a, b) => {
+  const sortedProjects = [...data.projects].sort((a, b) => {
     if (a.featured && !b.featured) return -1;
     if (!a.featured && b.featured) return 1;
     return 0;

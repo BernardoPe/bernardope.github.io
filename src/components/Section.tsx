@@ -53,7 +53,6 @@ export const Section: React.FC<SectionProps> = ({
     alignItems: centerContent ? 'center' : 'stretch',
   };
 
-  // Combine refs to work with both the section ref
   const combinedRef = (element: HTMLDivElement | null) => {
     if (sectionRef) {
       (sectionRef as React.MutableRefObject<HTMLDivElement | null>).current = element;

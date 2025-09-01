@@ -9,3 +9,6 @@
   - contact
   - experience
   - education
+
+- Add icons for preview/embed links
+- Adicionar demos

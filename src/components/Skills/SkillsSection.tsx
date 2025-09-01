@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, useTheme, alpha } from '@mui/material';
 import { Section } from '../Section';
-import aboutData from '../../data/about';
+import { data } from '../../data';
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 import './Skills.css';
 
@@ -127,7 +127,7 @@ export const SkillsSection: React.FC<{ sectionRef: React.RefObject<HTMLDivElemen
       sectionId="skills"
     >
       <Box className="skills-container">
-        {aboutData.skills.map((group, index) => (
+        {data.about.skills.map((group, index) => (
           <SkillCard key={group.title} group={group} index={index} />
         ))}
       </Box>

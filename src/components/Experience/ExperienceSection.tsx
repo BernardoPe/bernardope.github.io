@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { Section } from '../Section';
 import { ExperienceTimeline } from './ExperienceTimeline';
 import { ExperienceCard } from './ExperienceCard';
-import { experienceData } from './experienceData';
+import { data } from '../../data';
 import type { TimelineNode } from './types';
 import './Experience.css';
 
@@ -14,7 +14,7 @@ interface ExperienceSectionProps {
 export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ sectionRef }) => {
   const cardsRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
-  const timelineNodes: TimelineNode[] = experienceData.map((exp) => ({
+  const timelineNodes: TimelineNode[] = data.experience.map((exp) => ({
     id: exp.id,
     date: exp.endDate === 'Present' ? 'Current' : exp.startDate.split('-')[0],
     title: exp.title,
@@ -56,7 +56,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ sectionRef
       </Box>
 
       <Box className="experience-cards-container">
-        {experienceData.map((experience) => (
+        {data.experience.map((experience) => (
           <div
             key={experience.id}
             ref={(el) => {

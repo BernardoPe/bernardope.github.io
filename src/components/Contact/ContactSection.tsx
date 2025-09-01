@@ -6,6 +6,7 @@ import {
   GitHub as GitHubIcon,
 } from '@mui/icons-material';
 import { Section } from '../Section';
+import { data } from '../../data';
 import './Contact.css';
 
 interface ContactSectionProps {
@@ -18,29 +19,30 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
   const cardStyles = {
     border: '1px solid',
     borderColor: 'divider',
-    backgroundColor:
-      theme.palette.mode === 'light'
-        ? alpha(theme.palette.background.paper, 0.98)
-        : alpha(theme.palette.background.paper, 0.85),
+    backgroundColor: theme.palette.background.paper,
     boxShadow: theme.palette.mode === 'light' ? 1 : 2,
+    transition: 'all 0.3s ease',
     '&:hover': {
       transform: 'translateY(-4px)',
       boxShadow: theme.palette.mode === 'light' ? 6 : 8,
-      borderColor: alpha(theme.palette.primary.main, 0.5),
+      borderColor: theme.palette.primary.main,
     },
   };
 
   const iconStyles = {
-    backgroundColor: alpha(theme.palette.primary.main, 0.1),
-    color: theme.palette.primary.main,
+    backgroundColor: alpha(theme.palette.text.primary, 0.1),
+    color: theme.palette.text.primary,
   };
 
   const linkStyles = {
     backgroundColor: alpha(theme.palette.primary.main, 0.1),
     color: theme.palette.primary.main,
+    textDecoration: 'none',
+    transition: 'all 0.3s ease',
     '&:hover': {
       backgroundColor: theme.palette.primary.main,
       color: theme.palette.primary.contrastText,
+      textDecoration: 'none',
     },
   };
 
@@ -69,7 +71,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
           </Typography>
           <Box
             component="a"
-            href="mailto:bernardo.correia.pereira@gmail.com"
+            href={`mailto:${data.contact.email}`}
             className="contact-link"
             sx={linkStyles}
           >
@@ -94,7 +96,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
           </Typography>
           <Box
             component="a"
-            href="https://linkedin.com/in/BernardoPe"
+            href={data.contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
@@ -121,7 +123,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
           </Typography>
           <Box
             component="a"
-            href="https://github.com/BernardoPe"
+            href={data.contact.github}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
