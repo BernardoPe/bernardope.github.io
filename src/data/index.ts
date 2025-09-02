@@ -273,7 +273,7 @@ export const data: AppData = {
       title: 'HtmlFlow',
       description: 'Java/Kotlin DSL for HTML templating with active contribution and maintenance',
       details: [
-        'Contributed to and maintained HtmlFlow, a DSL for building HTML in Java/Kotlin',
+        'Contributing to and maintaining HtmlFlow, a DSL for building HTML in Java/Kotlin',
         'Worked on integration with the http4k framework for seamless web development',
         'Implemented Hot Reloading support for views to improve developer experience',
       ],
