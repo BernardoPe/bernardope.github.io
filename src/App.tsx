@@ -3,17 +3,17 @@ import './App.css';
 import { ThemeContextProvider } from './context/ThemeContext';
 import { Box, CssBaseline } from '@mui/material';
 import { ThemeToggle } from './components/ThemeToggle';
-import { TopNavigation } from './components/navigation/TopNavigation';
-import { HeroSection } from './components/hero/HeroSection';
-import { MobileNavigation } from './components/navigation/MobileNavigation';
-import { EducationSection } from './components/education/EducationSection';
-import { ExperienceSection } from './components/experience/ExperienceSection';
-import { ProjectsSection } from './components/projects/ProjectsSection';
-import { ContactSection } from './components/contact/ContactSection';
-import { InteractiveBackground } from './components/background/InteractiveBackground';
+import { TopNavigation } from './components/Navigation/TopNavigation';
+import { HeroSection } from './components/Hero/HeroSection';
+import { MobileNavigation } from './components/Navigation/MobileNavigation';
+import { EducationSection } from './components/Education/EducationSection';
+import { ExperienceSection } from './components/Experience/ExperienceSection';
+import { ProjectsSection } from './components/Projects/ProjectsSection';
+import { ContactSection } from './components/Contact/ContactSection';
+import { InteractiveBackground } from './components/Background/InteractiveBackground';
 import { useArrowNavigation } from './hooks/useArrowNavigation';
 import { useScrollSectionTracker } from './hooks/useScrollSectionTracker';
-import { SkillsSection } from './components/skills/SkillsSection';
+import { SkillsSection } from './components/Skills/SkillsSection';
 
 export interface Section {
   id: string;
