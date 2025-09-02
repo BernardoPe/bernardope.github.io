@@ -7,7 +7,7 @@ import {
 } from '@mui/icons-material';
 import { Section } from '../Section';
 import { ContactCard } from './ContactCard';
-import { contactMethods } from '../../Data';
+import { contactMethods } from '../../data';
 import './Contact.css';
 
 interface ContactSectionProps {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
-import { SPACING } from '../../Styles/constants';
+import { SPACING } from '../../styles/constants';
 
 interface EducationGradeProps {
   grade: string;

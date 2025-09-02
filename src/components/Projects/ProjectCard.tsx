@@ -5,8 +5,8 @@ import {
   Launch as LaunchIcon,
   Article as ArticleIcon,
 } from '@mui/icons-material';
-import { useIntersectionObserver } from '../../Hooks/useIntersectionObserver';
-import type { Project } from '../../Data';
+import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
+import type { Project } from '../../data';
 
 interface ProjectCardProps {
   project: Project;

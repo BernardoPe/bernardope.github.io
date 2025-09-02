@@ -1,8 +1,8 @@
 import React from 'react';
 import { IconButton, Tooltip, useTheme } from '@mui/material';
 import { LightMode, DarkMode } from '@mui/icons-material';
-import { useThemeContext } from '../Context/ThemeContext';
-import { commonStyles, getHoverEffect } from '../Styles/constants';
+import { useThemeContext } from '../context/ThemeContext';
+import { commonStyles, getHoverEffect } from '../styles/constants';
 
 export const ThemeToggle: React.FC = () => {
   const theme = useTheme();

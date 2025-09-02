@@ -2,8 +2,8 @@ import React from 'react';
 import { Box, Typography, useTheme, alpha } from '@mui/material';
 import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
-import { data } from '../../Data';
-import { useIntersectionObserver } from '../../Hooks/useIntersectionObserver';
+import { data } from '../../data';
+import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 import './Skills.css';
 
 interface SkillGroup {

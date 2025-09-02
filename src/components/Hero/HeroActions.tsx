@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
 import { Download, Email } from '@mui/icons-material';
-import { commonStyles } from '../../Styles/constants';
+import { commonStyles } from '../../styles/constants';
 import './Hero.css';
 
 interface HeroActionsProps {

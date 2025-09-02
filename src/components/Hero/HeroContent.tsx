@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
-import { getAnimatedTextGradient as getTextGradient } from '../../Styles/constants';
+import { getAnimatedTextGradient as getTextGradient } from '../../styles/constants';
 import './Hero.css';
 
 interface HeroContentProps {

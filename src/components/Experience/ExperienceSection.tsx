@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
 import { ExperienceTimeline } from './ExperienceTimeline';
 import { ExperienceCard } from './ExperienceCard';
-import { data } from '../../Data';
+import { data } from '../../data';
 import type { TimelineNode } from './types';
 import './Experience.css';
 

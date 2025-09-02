@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Card, CardContent, Typography, useTheme, alpha } from '@mui/material';
-import { commonStyles } from '../../Styles/constants';
+import { commonStyles } from '../../styles/constants';
 import { EducationHeader } from './EducationHeader';
 import { EducationAchievements } from './EducationAchievements';
 import { EducationCourses } from './EducationCourses';

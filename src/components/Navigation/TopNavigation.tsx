@@ -8,7 +8,7 @@ import {
   Email as EmailIcon,
   Handyman,
 } from '@mui/icons-material';
-import { getGlassEffect, SPACING } from '../../Styles/constants';
+import { getGlassEffect, SPACING } from '../../styles/constants';
 import type { Section } from '../../App';
 import { NavigationItem } from './NavigationItem';
 import { UserProfile } from './UserProfile';

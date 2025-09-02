@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import { HeroContent } from './HeroContent';
 import { HeroActions } from './HeroActions';
 import { HeroAvatar } from './HeroAvatar';
-import { data } from '../../Data';
+import { data } from '../../data';
 import './Hero.css';
 import { Section } from '../Section';
 

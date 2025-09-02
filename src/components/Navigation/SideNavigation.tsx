@@ -9,7 +9,7 @@ import {
 } from '@mui/icons-material';
 import { NavigationItem } from './NavigationItem';
 import { UserProfile } from './UserProfile';
-import { LAYOUT, getGlassEffect, SPACING } from '../../Styles/constants';
+import { LAYOUT, getGlassEffect, SPACING } from '../../styles/constants';
 import type { Section } from '../../App';
 
 interface SideNavigationProps {

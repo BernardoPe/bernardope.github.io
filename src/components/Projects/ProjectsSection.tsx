@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
 import { ProjectCard } from './ProjectCard';
-import { data } from '../../Data';
+import { data } from '../../data';
 import './Projects.css';
 
 interface ProjectsSectionProps {

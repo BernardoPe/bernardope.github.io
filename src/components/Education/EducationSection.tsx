@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
 import { EducationCard } from './EducationCard';
-import { data } from '../../Data';
+import { data } from '../../data';
 import './Education.css';
 
 interface EducationSectionProps {

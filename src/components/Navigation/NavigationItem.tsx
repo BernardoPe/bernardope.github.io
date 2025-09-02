@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListItemButton, ListItemIcon, ListItemText, useTheme, alpha } from '@mui/material';
-import { SPACING } from '../../Styles/constants';
+import { SPACING } from '../../styles/constants';
 
 interface NavigationItemProps {
   icon: React.ComponentType;
