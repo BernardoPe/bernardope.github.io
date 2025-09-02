@@ -140,9 +140,9 @@ export const data: AppData = {
       {
         title: 'Programming Languages',
         text: [
-          'Proficient in multiple languages to solve diverse problems',
-          'Solid foundations in both compiled and interpreted languages',
-          'Experienced with object-oriented and functional programming paradigms',
+          'Developed solutions in multiple languages to solve diverse problems',
+          'Gained solid foundations in both compiled and interpreted languages',
+          'Applied object-oriented and functional programming paradigms',
         ],
         list: [
           {
@@ -174,9 +174,9 @@ export const data: AppData = {
       {
         title: 'Frontend',
         text: [
-          'Modern web development with React and component-driven architectures',
-          'Responsive, accessible UIs using HTML5, CSS3 and modern JavaScript',
-          'Familiar with build tooling and API testing (Webpack, Postman)',
+          'Built modern web applications with React and component-driven architectures',
+          'Developed responsive, accessible UIs with HTML5, CSS3, and modern JavaScript',
+          'Worked with build tooling and API testing (Webpack, Postman)',
         ],
         list: [
           {
@@ -205,9 +205,9 @@ export const data: AppData = {
       {
         title: 'Backend',
         text: [
-          'Database design and management using SQL and NoSQL systems',
-          'Server-side development with Node.js and Spring ecosystems',
-          'Designing RESTful APIs and microservices for scalable systems',
+          'Designed database schemas and managed SQL and NoSQL systems',
+          'Developed server-side applications with Node.js and Spring ecosystems',
+          'Designed RESTful APIs and microservices for scalable systems',
         ],
         list: [
           {
@@ -239,9 +239,9 @@ export const data: AppData = {
       {
         title: 'Cloud & DevOps',
         text: [
-          'Experience with Google Cloud Platform services',
-          'Containerization and CI/CD workflows with Docker',
-          'Web server configuration and reverse proxy using Nginx',
+          'Used Google Cloud Platform services',
+          'Implemented containerization and CI/CD workflows with Docker',
+          'Configured web servers and reverse proxies with Nginx',
         ],
         list: [
           {
@@ -273,8 +273,8 @@ export const data: AppData = {
       title: 'HtmlFlow',
       description: 'Java/Kotlin DSL for HTML templating with active contribution and maintenance',
       details: [
-        'Active contributor and maintainer of HtmlFlow, a DSL for building HTML in Java/Kotlin',
-        'Working on integration with the http4k framework for seamless web development',
+        'Contributed to and maintained HtmlFlow, a DSL for building HTML in Java/Kotlin',
+        'Worked on integration with the http4k framework for seamless web development',
         'Implemented Hot Reloading support for views to improve developer experience',
       ],
       technologies: [
@@ -305,10 +305,9 @@ export const data: AppData = {
       title: 'Musyk',
       description: 'A discord music bot built with discord.js and discord-player',
       details: [
-        'Maintainer of Musyk, my personal discord music bot',
-        'Implemented features like playlist management, song search, and audio filters',
-        'Integrated with various music APIs for seamless playback',
-        'Used Prisma for database management of server configuration data',
+        'Maintaining Musyk, my Discord music bot',
+        'Implemented features such as playlist management, song search, and audio filters',
+        'Used Prisma to manage server configuration data',
       ],
       technologies: [
         {
@@ -350,8 +349,8 @@ export const data: AppData = {
         'Performance benchmark comparing reactive, coroutine, and virtual thread approaches to HTML rendering',
       details: [
         'Benchmarked PSSR in Kotlin using Spring MVC, WebFlux, and Quarkus with reactive, coroutine, and virtual thread approaches',
-        'Demonstrated how Java Virtual Threads enable non-blocking rendering with external DSL engines',
-        'Achieved comparable scalability to non-blocking models with simpler synchronous API code',
+        'Demonstrated how Java Virtual Threads enabled non-blocking rendering with external DSL engines',
+        'Achieved comparable scalability to non-blocking models while keeping synchronous API code simpler',
         'Final Project for BSc in Computer Science and Engineering (20/20 grade)',
       ],
       technologies: [
@@ -392,10 +391,10 @@ export const data: AppData = {
       title: 'Instant Messaging',
       description: 'Full-stack real-time messaging application with Android and Web clients',
       details: [
-        'Built an Android client in Kotlin as well as a web client with React + TypeScript for a real-time channel-based messaging platform',
+        'Built an Android client in Kotlin and a web client with React + TypeScript for a channel-based messaging platform',
         'Integrated Server-Sent Events (SSE) for instant message delivery and updates',
         'Consumed a Spring REST API with OkHttp to handle authentication, channel management, and messaging',
-        'Implemented real-time communication features for seamless user experience',
+        'Implemented real-time communication features for a seamless user experience',
       ],
       technologies: [
         {

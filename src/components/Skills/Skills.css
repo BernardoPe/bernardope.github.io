@@ -39,7 +39,7 @@
 .skill-card {
   text-align: start;
   overflow: hidden;
-  min-height: 450px;
+  min-height: 600px !important;
   width: 380px;
   flex: 0 0 380px;
   display: flex;
