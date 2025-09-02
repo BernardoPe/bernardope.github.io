@@ -21,7 +21,7 @@ import {
   Code as CodeIcon,
   Email as EmailIcon,
 } from '@mui/icons-material';
-import { getGlassEffect, SPACING } from '../../styles/constants';
+import { getGlassEffect, SPACING } from '../../Styles/constants';
 import type { Section } from '../../App';
 
 interface MobileNavigationProps {

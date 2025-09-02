@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import { Box } from '@mui/material';
+import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
 import { ExperienceTimeline } from './ExperienceTimeline';
 import { ExperienceCard } from './ExperienceCard';
-import { data } from '../../data';
+import { data } from '../../Data';
 import type { TimelineNode } from './types';
 import './Experience.css';
 
@@ -51,22 +52,26 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ sectionRef
       centerContent={false}
       sectionId="experience"
     >
-      <Box className="experience-timeline-container">
-        <ExperienceTimeline nodes={timelineNodes} onNodeClick={handleNodeClick} />
-      </Box>
+      <Fade direction="up" delay={300} duration={600} triggerOnce>
+        <Box className="experience-timeline-container">
+          <ExperienceTimeline nodes={timelineNodes} onNodeClick={handleNodeClick} />
+        </Box>
+      </Fade>
 
-      <Box className="experience-cards-container">
-        {data.experience.map((experience) => (
-          <div
-            key={experience.id}
-            ref={(el) => {
-              if (el) cardsRefs.current[experience.id] = el;
-            }}
-          >
-            <ExperienceCard experience={experience} />
-          </div>
-        ))}
-      </Box>
+      <Fade direction="up" delay={300} duration={600} triggerOnce>
+        <Box className="experience-cards-container">
+          {data.experience.map((experience) => (
+            <div
+              key={experience.id}
+              ref={(el) => {
+                if (el) cardsRefs.current[experience.id] = el;
+              }}
+            >
+              <ExperienceCard experience={experience} />
+            </div>
+          ))}
+        </Box>
+      </Fade>
     </Section>
   );
 };

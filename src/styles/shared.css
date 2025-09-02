@@ -152,8 +152,12 @@
 /* Responsive Design */
 @media (max-width: 767px) {
   .section-content {
-    padding: 0 1rem;
+    padding: 0 !important;
     text-align: center;
+  }
+
+  .section {
+    padding: 1rem !important;
   }
 
   .section-title {

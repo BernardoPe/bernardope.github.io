@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
-import { SPACING } from '../../styles/constants';
+import { SPACING } from '../../Styles/constants';
 
 interface UserProfileProps {
   name: string;

@@ -182,6 +182,7 @@
   .skills-container {
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0;
   }
 
   .skill-card {

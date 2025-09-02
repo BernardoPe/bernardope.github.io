@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Card, CardContent, Typography, useTheme, alpha } from '@mui/material';
-import { commonStyles } from '../../styles/constants';
+import { commonStyles } from '../../Styles/constants';
 import { ExperienceHeader } from './ExperienceHeader';
 import { ExperienceAchievements } from './ExperienceAchievements';
 import { ExperienceTechnologies } from './ExperienceTechnologies';

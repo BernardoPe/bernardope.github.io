@@ -1,9 +1,10 @@
 import React from 'react';
 import { Box } from '@mui/material';
+import { Fade } from 'react-awesome-reveal';
 import { HeroContent } from './HeroContent';
 import { HeroActions } from './HeroActions';
 import { HeroAvatar } from './HeroAvatar';
-import { data } from '../../data';
+import { data } from '../../Data';
 import './Hero.css';
 import { Section } from '../Section';
 
@@ -36,16 +37,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ sectionRef, contactRef
   return (
     <Section sectionRef={sectionRef} sectionId="hero">
       <Box sx={contentContainerStyles} className="hero-content-layout">
-        <Box className="hero-content-wrapper">
-          <HeroContent
-            greeting={data.hero.greeting}
-            name={data.hero.name}
-            title={data.hero.title}
-            description={data.hero.description}
-          />
-          <HeroActions onDownloadCV={handleDownloadCV} onContactClick={handleContactClick} />
-        </Box>
-        <HeroAvatar src="/assets/images/me.jpg" alt="" />
+        <Fade direction="up" delay={300} duration={600} triggerOnce>
+          <Box className="hero-content-wrapper">
+            <HeroContent
+              greeting={data.hero.greeting}
+              name={data.hero.name}
+              title={data.hero.title}
+              description={data.hero.description}
+            />
+            <HeroActions onDownloadCV={handleDownloadCV} onContactClick={handleContactClick} />
+          </Box>
+        </Fade>
+        <Fade direction="up" delay={300} duration={600} triggerOnce>
+          <HeroAvatar src="/assets/images/me.jpg" alt="" />
+        </Fade>
       </Box>
     </Section>
   );

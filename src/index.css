@@ -42,6 +42,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Motterdam';
+  src: url('assets/fonts/Motterdam.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

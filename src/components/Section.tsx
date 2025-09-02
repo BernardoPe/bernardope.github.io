@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
-import { commonStyles, getAnimatedTextGradient, getGlassEffect } from '../styles/constants';
+import { commonStyles, getAnimatedTextGradient, getGlassEffect } from '../Styles/constants';
 
 interface SectionProps {
   title?: string;

@@ -16,6 +16,7 @@ export interface Project {
   description: string;
   details: string[];
   technologies: Technology[];
+  logo?: string;
   links: {
     github?: string;
     demo?: string;
@@ -296,8 +297,9 @@ export const data: AppData = {
       links: {
         github: 'https://github.com/xmlet/HtmlFlow',
       },
+      logo: 'https://avatars.githubusercontent.com/u/35267172?s=200&v=4',
       status: 'in-progress',
-      featured: true,
+      featured: false,
     },
     {
       title: 'Musyk',
@@ -339,7 +341,8 @@ export const data: AppData = {
         github: 'https://github.com/xmlet/HtmlFlow',
       },
       status: 'in-progress',
-      featured: true,
+      logo: 'https://cdn.discordapp.com/avatars/1104836508944445551/8d6d9e1c7d449ff3862bd04b0f84a147?size=256',
+      featured: false,
     },
     {
       title: 'Non-Blocking Progressive SSR Benchmark',
@@ -534,3 +537,27 @@ export const projectsData = data.projects;
 export const experienceData = data.experience;
 export const educationData = data.education;
 export const contactData = data.contact;
+
+export const contactMethods = [
+  {
+    type: 'email',
+    title: 'Email',
+    description: 'Send me a message',
+    href: `mailto:${data.contact.email}`,
+    iconName: 'Email',
+  },
+  {
+    type: 'linkedin',
+    title: 'LinkedIn',
+    description: 'Connect with me',
+    href: data.contact.linkedin,
+    iconName: 'LinkedIn',
+  },
+  {
+    type: 'github',
+    title: 'GitHub',
+    description: 'Check out my projects and contributions on GitHub',
+    href: data.contact.github,
+    iconName: 'GitHub',
+  },
+];

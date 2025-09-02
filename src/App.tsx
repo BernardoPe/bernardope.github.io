@@ -1,19 +1,19 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './App.css';
-import { ThemeContextProvider } from './context/ThemeContext';
+import { ThemeContextProvider } from './Context/ThemeContext';
 import { Box, CssBaseline } from '@mui/material';
-import { ThemeToggle } from './components/ThemeToggle';
-import { TopNavigation } from './components/Navigation/TopNavigation';
-import { HeroSection } from './components/Hero/HeroSection';
-import { MobileNavigation } from './components/Navigation/MobileNavigation';
-import { EducationSection } from './components/Education/EducationSection';
-import { ExperienceSection } from './components/Experience/ExperienceSection';
-import { ProjectsSection } from './components/Projects/ProjectsSection';
-import { ContactSection } from './components/Contact/ContactSection';
-import { InteractiveBackground } from './components/Background/InteractiveBackground';
-import { useArrowNavigation } from './hooks/useArrowNavigation';
-import { useScrollSectionTracker } from './hooks/useScrollSectionTracker';
-import { SkillsSection } from './components/Skills/SkillsSection';
+import { ThemeToggle } from './Components/ThemeToggle';
+import { TopNavigation } from './Components/Navigation/TopNavigation';
+import { HeroSection } from './Components/Hero/HeroSection';
+import { MobileNavigation } from './Components/Navigation/MobileNavigation';
+import { EducationSection } from './Components/Education/EducationSection';
+import { ExperienceSection } from './Components/Experience/ExperienceSection';
+import { ProjectsSection } from './Components/Projects/ProjectsSection';
+import { ContactSection } from './Components/Contact/ContactSection';
+import { InteractiveBackground } from './Components/Background/InteractiveBackground';
+import { useArrowNavigation } from './Hooks/useArrowNavigation';
+import { useScrollSectionTracker } from './Hooks/useScrollSectionTracker';
+import { SkillsSection } from './Components/Skills/SkillsSection';
 
 export interface Section {
   id: string;

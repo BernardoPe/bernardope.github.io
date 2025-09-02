@@ -22,51 +22,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Motterdam';
-  src: url('assets/fonts/Motterdam.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono Bold';
-  src: url('assets/fonts/JetBrainsMono-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono BoldItalic';
-  src: url('assets/fonts/JetBrainsMono-BoldItalic.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono ExtraBold';
-  src: url('assets/fonts/JetBrainsMono-ExtraBold.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono ExtraBoldItalic';
-  src: url('assets/fonts/JetBrainsMono-ExtraBoldItalic.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono Italic';
-  src: url('assets/fonts/JetBrainsMono-ExtraLightItalic.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono Light';
-  src: url('assets/fonts/JetBrainsMono-Light.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono Medium';
-  src: url('assets/fonts/JetBrainsMono-Medium.ttf');
-}
-
-@font-face {
-  font-family: 'Jetbrains Mono';
-  src: url('assets/fonts/JetBrainsMono-Regular.ttf');
-}
-
 .logo {
   height: 6em;
   will-change: filter;

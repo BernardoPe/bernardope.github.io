@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, Typography, useTheme, alpha } from '@mui/material';
+import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
-import { data } from '../../data';
-import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
+import { data } from '../../Data';
+import { useIntersectionObserver } from '../../Hooks/useIntersectionObserver';
 import './Skills.css';
 
 interface SkillGroup {
@@ -127,9 +128,11 @@ export const SkillsSection: React.FC<{ sectionRef: React.RefObject<HTMLDivElemen
       sectionId="skills"
     >
       <Box className="skills-container">
-        {data.about.skills.map((group, index) => (
-          <SkillCard key={group.title} group={group} index={index} />
-        ))}
+        <Fade direction="up" delay={50} duration={600} triggerOnce>
+          {data.about.skills.map((group, index) => (
+            <SkillCard key={group.title} group={group} index={index} />
+          ))}
+        </Fade>
       </Box>
     </Section>
   );

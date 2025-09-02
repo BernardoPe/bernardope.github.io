@@ -1,7 +1,8 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 import { Section } from '../Section';
 import { EducationCard } from './EducationCard';
-import { data } from '../../data';
+import { data } from '../../Data';
 import './Education.css';
 
 interface EducationSectionProps {
@@ -17,9 +18,11 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ sectionRef }
       centerContent={false}
       sectionId="education"
     >
-      {data.education.map((education, idx) => (
-        <EducationCard key={idx} education={education} />
-      ))}
+      <Fade direction="up" delay={300} duration={600} triggerOnce>
+        {data.education.map((education, idx) => (
+          <EducationCard key={idx} education={education} />
+        ))}
+      </Fade>
     </Section>
   );
 };
