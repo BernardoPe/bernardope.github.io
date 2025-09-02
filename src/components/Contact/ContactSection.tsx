@@ -41,7 +41,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
           {contactMethods.map((contact) => (
             <ContactCard
               key={contact.type}
-              type={contact.type}
               title={contact.title}
               description={contact.description}
               href={contact.href}
