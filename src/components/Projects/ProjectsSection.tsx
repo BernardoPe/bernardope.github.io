@@ -25,7 +25,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ sectionRef }) 
       className="projects-section"
       sectionId="projects"
     >
-      <Fade direction="up" delay={300} duration={600} triggerOnce>
+      <Fade direction="up" delay={100} duration={600} triggerOnce>
         <Box className="projects-grid">
           {sortedProjects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />

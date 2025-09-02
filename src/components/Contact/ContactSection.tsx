@@ -36,7 +36,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
       subtitle="I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!"
       sectionId="contact"
     >
-      <Fade direction="up" delay={300} duration={600} triggerOnce>
+      <Fade direction="up" delay={100} duration={600} triggerOnce>
         <div className="contact-methods">
           {contactMethods.map((contact) => (
             <ContactCard

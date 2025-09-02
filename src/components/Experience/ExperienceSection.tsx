@@ -52,13 +52,13 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ sectionRef
       centerContent={false}
       sectionId="experience"
     >
-      <Fade direction="up" delay={300} duration={600} triggerOnce>
+      <Fade direction="up" delay={100} duration={600} triggerOnce>
         <Box className="experience-timeline-container">
           <ExperienceTimeline nodes={timelineNodes} onNodeClick={handleNodeClick} />
         </Box>
       </Fade>
 
-      <Fade direction="up" delay={300} duration={600} triggerOnce>
+      <Fade direction="up" delay={100} duration={600} triggerOnce>
         <Box className="experience-cards-container">
           {data.experience.map((experience) => (
             <div

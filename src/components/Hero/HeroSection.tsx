@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ sectionRef, contactRef
   return (
     <Section sectionRef={sectionRef} sectionId="hero">
       <Box sx={contentContainerStyles} className="hero-content-layout">
-        <Fade direction="up" delay={300} duration={600} triggerOnce>
+        <Fade direction="up" delay={100} duration={400} triggerOnce>
           <Box className="hero-content-wrapper">
             <HeroContent
               greeting={data.hero.greeting}
@@ -48,7 +48,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ sectionRef, contactRef
             <HeroActions onDownloadCV={handleDownloadCV} onContactClick={handleContactClick} />
           </Box>
         </Fade>
-        <Fade direction="up" delay={300} duration={600} triggerOnce>
+        <Fade direction="up" delay={100} duration={600} triggerOnce>
           <HeroAvatar src="/assets/images/me.jpg" alt="" />
         </Fade>
       </Box>

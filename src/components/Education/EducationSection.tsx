@@ -18,7 +18,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ sectionRef }
       centerContent={false}
       sectionId="education"
     >
-      <Fade direction="up" delay={300} duration={600} triggerOnce>
+      <Fade direction="up" delay={100} duration={600} triggerOnce>
         {data.education.map((education, idx) => (
           <EducationCard key={idx} education={education} />
         ))}

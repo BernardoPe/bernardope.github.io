@@ -128,7 +128,7 @@ export const SkillsSection: React.FC<{ sectionRef: React.RefObject<HTMLDivElemen
       sectionId="skills"
     >
       <Box className="skills-container">
-        <Fade direction="up" delay={50} duration={600} triggerOnce>
+        <Fade direction="up" delay={100} duration={600} triggerOnce>
           {data.about.skills.map((group, index) => (
             <SkillCard key={group.title} group={group} index={index} />
           ))}
