@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback } from 'react';
+import React from 'react';
 import { AppBar, Toolbar, Box, useTheme, alpha } from '@mui/material';
 import {
   Home as HomeIcon,
@@ -20,86 +20,53 @@ interface TopNavigationProps {
 
 const navigationIcons = [HomeIcon, Handyman, WorkIcon, SchoolIcon, CodeIcon, EmailIcon];
 
-const staticNavBoxStyles = {
-  display: 'flex',
-  alignItems: 'center',
-  flex: 1,
-} as const;
-
-const staticToolbarStyles = {
-  minHeight: 56,
-} as const;
-
 export const TopNavigation: React.FC<TopNavigationProps> = ({ sections }) => {
   const theme = useTheme();
 
-  const appBarStyles = useMemo(
-    () => ({
-      ...getGlassEffect(theme),
-      boxShadow: 'none',
-      borderBottom: `1px solid ${alpha(theme.palette.divider, 0.12)}`,
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      width: '100%',
-      zIndex: theme.zIndex.drawer + 1,
-      display: { xs: 'none', md: 'block' },
-      px: {
-        xs: SPACING.md * 2,
-        sm: SPACING.lg * 4,
-      },
-    }),
-    [theme]
-  );
-
-  const navBoxStyles = useMemo(
-    () => ({
-      ...staticNavBoxStyles,
-      gap: SPACING.sm,
-    }),
-    []
-  );
-
-  const toolbarStyles = useMemo(
-    () => ({
-      ...staticToolbarStyles,
-      px: SPACING.lg,
-    }),
-    []
-  );
-
-  const sectionRefs = useMemo(() => sections.map((section) => section.ref), [sections]);
-
-  const { currentSection, navigateTo } = useNavigation({ sectionRefs });
-
-  const handleNavigation = useCallback(
-    (index: number) => {
-      navigateTo(index);
+  const appBarStyles = {
+    ...getGlassEffect(theme),
+    boxShadow: 'none',
+    borderBottom: `1px solid ${alpha(theme.palette.divider, 0.12)}`,
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    zIndex: theme.zIndex.drawer + 1,
+    display: { xs: 'none', md: 'block' },
+    px: {
+      xs: SPACING.md * 2,
+      sm: SPACING.lg * 4,
     },
-    [navigateTo]
-  );
+  };
 
-  const navigationItems = useMemo(
-    () =>
-      sections.map((section, index) => {
-        const Icon = navigationIcons[index];
-        return (
-          <NavigationItem
-            key={section.id}
-            icon={Icon}
-            title={section.title}
-            isActive={currentSection === index}
-            onClick={() => handleNavigation(index)}
-          />
-        );
-      }),
-    [sections, currentSection, handleNavigation]
-  );
+  const navBoxStyles = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: SPACING.sm, // Reduced from SPACING.lg to bring items closer
+    flex: 1,
+  };
+
+  const sectionRefs = sections.map((section) => section.ref);
+  const { currentSection, navigateTo } = useNavigation({ sectionRefs });
 
   return (
     <AppBar position="static" sx={appBarStyles}>
-      <Toolbar disableGutters sx={toolbarStyles}>
-        <Box sx={navBoxStyles}>{navigationItems}</Box>
+      <Toolbar disableGutters sx={{ px: SPACING.lg, minHeight: 56 }}>
+        {' '}
+        <Box sx={navBoxStyles}>
+          {sections.map((section, index) => {
+            const Icon = navigationIcons[index];
+            return (
+              <NavigationItem
+                key={section.id}
+                icon={Icon}
+                title={section.title}
+                isActive={currentSection === index}
+                onClick={() => navigateTo(index)}
+              />
+            );
+          })}
+        </Box>
         <UserProfile name="Bernardo Pereira" />
       </Toolbar>
     </AppBar>
