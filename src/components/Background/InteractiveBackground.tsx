@@ -253,10 +253,9 @@ export const InteractiveBackground: React.FC = () => {
 
   const backgroundStyle = useMemo(
     () => `
-    radial-gradient(ellipse at 25% 25%, ${alpha(theme.palette.primary.main || '#10b981', 0.06)} 0%, transparent 60%),
-    radial-gradient(ellipse at 75% 75%, ${alpha(theme.palette.secondary.main || '#3b82f6', 0.06)} 0%, transparent 60%),
-    radial-gradient(ellipse at 50% 10%, ${alpha(theme.palette.primary.light || '#34d399', 0.04)} 0%, transparent 70%),
-    linear-gradient(135deg, transparent 0%, ${alpha(theme.palette.background?.default || '#000', 0.02)} 100%)
+    radial-gradient(ellipse at 25% 25%, ${alpha(theme.palette.primary.main || '#10b981', 0.32)} 0%, transparent 60%),
+    radial-gradient(ellipse at 75% 75%, ${alpha(theme.palette.secondary.main || '#3b82f6', 0.32)} 0%, transparent 60%),
+    linear-gradient(135deg, transparent 0%, ${alpha(theme.palette.background?.default || '#000', 0.32)} 100%)
   `,
     [theme.palette]
   );
