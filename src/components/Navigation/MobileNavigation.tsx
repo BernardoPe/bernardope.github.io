@@ -23,20 +23,15 @@ import {
 } from '@mui/icons-material';
 import { getGlassEffect, SPACING } from '../../styles/constants';
 import type { Section } from '../../App';
+import { useNavigation } from '../../hooks/useNavigation';
 
 interface MobileNavigationProps {
   sections: Section[];
-  currentSection: number;
-  onSectionClick: (index: number) => void;
 }
 
 const navigationIcons = [HomeIcon, PersonIcon, WorkIcon, SchoolIcon, CodeIcon, EmailIcon];
 
-export const MobileNavigation: React.FC<MobileNavigationProps> = ({
-  sections,
-  currentSection,
-  onSectionClick,
-}) => {
+export const MobileNavigation: React.FC<MobileNavigationProps> = ({ sections }) => {
   const theme = useTheme();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -44,8 +39,11 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  const sectionRefs = sections.map((section) => section.ref);
+  const { currentSection, navigateTo } = useNavigation({ sectionRefs });
+
   const handleSectionClick = (index: number) => {
-    onSectionClick(index);
+    navigateTo(index);
     setIsDrawerOpen(false);
   };
 

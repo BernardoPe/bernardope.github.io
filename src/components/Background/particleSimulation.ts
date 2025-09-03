@@ -32,7 +32,7 @@ export class ParticleSimulation {
     densityPreset: ParticleDensity
   ) {
     this.config = getConfig(width, height, densityPreset);
-    console.log('Particle config:', this.config);
+
     const n = this.config.particleCount;
     this.particles = {
       positions: new Float32Array(n * 2),
@@ -66,6 +66,134 @@ export class ParticleSimulation {
     this.basePositions = new Float32Array(n * 2);
 
     this.initializeParticles(width, height, palette);
+  }
+
+  applyGpuState(pos: Float32Array, vel: Float32Array, props: Float32Array) {
+    const n = this.config.particleCount;
+    if (pos.length < n * 2 || vel.length < n * 2 || props.length < n * 4) return;
+
+    for (let i = 0; i < n; i++) {
+      const p2 = i * 2;
+      const p6 = i * 6;
+      this.particles.positions[p2] = pos[p2];
+      this.particles.positions[p2 + 1] = pos[p2 + 1];
+      this.particles.velocities[p2] = vel[p2];
+      this.particles.velocities[p2 + 1] = vel[p2 + 1];
+      this.particles.properties[p6] = props[i * 4 + 0]; // size
+      this.particles.properties[p6 + 1] = props[i * 4 + 1]; // opacity
+      this.particles.properties[p6 + 2] = props[i * 4 + 2]; // baseOpacity
+      this.particles.properties[p6 + 3] = props[i * 4 + 3]; // life
+    }
+
+    this.rebuildRenderData();
+  }
+
+  private rebuildRenderData() {
+    const n = this.config.particleCount;
+    this.connectionCounts.fill(0);
+    this.spatialGrid.rebuild();
+    for (let i = 0; i < n; i++) {
+      const posOffset = i * 2;
+      this.spatialGrid.insert(
+        i,
+        this.particles.positions[posOffset],
+        this.particles.positions[posOffset + 1]
+      );
+    }
+
+    this.lineCount = 0;
+    const maxSegments = this.lineVertices.length / 4;
+
+    this.spatialGrid.forEachNeighborPair((i, j) => {
+      const posI = i * 2;
+      const posJ = j * 2;
+      const dx = this.particles.positions[posI] - this.particles.positions[posJ];
+      const dy = this.particles.positions[posI + 1] - this.particles.positions[posJ + 1];
+      const dist = Math.hypot(dx, dy);
+
+      if (dist < PHYSICS.PARTICLE_REPEL_RADIUS && dist > 0) {
+        const repel = (PHYSICS.PARTICLE_REPEL_RADIUS - dist) / PHYSICS.PARTICLE_REPEL_RADIUS;
+        const strength = repel * PHYSICS.PARTICLE_REPEL_STRENGTH;
+        const inv = 1.0 / dist;
+        const rx = dx * inv * strength;
+        const ry = dy * inv * strength;
+
+        this.particles.velocities[i * 2] += rx;
+        this.particles.velocities[i * 2 + 1] += ry;
+        this.particles.velocities[j * 2] -= rx;
+        this.particles.velocities[j * 2 + 1] -= ry;
+      }
+
+      if (dist < this.config.maxDistance) {
+        this.connectionCounts[i]++;
+        this.connectionCounts[j]++;
+
+        if (this.lineCount < maxSegments) {
+          const strength = Math.pow(1 - dist / this.config.maxDistance, 2);
+          const propI = i * 6;
+          const propJ = j * 6;
+          const avgOpacity =
+            (this.particles.properties[propI + 1] + this.particles.properties[propJ + 1]) /
+            (2 * 255);
+          const avgConn =
+            (this.particles.properties[propI + 5] + this.particles.properties[propJ + 5]) * 0.5;
+          const finalA = Math.max(0, Math.min(1, strength * avgOpacity * (0.35 + avgConn * 0.06)));
+
+          if (finalA > 0.02) {
+            const vertexOffset = this.lineCount * 4;
+            this.lineVertices[vertexOffset] = this.particles.positions[posI];
+            this.lineVertices[vertexOffset + 1] = this.particles.positions[posI + 1];
+            this.lineVertices[vertexOffset + 2] = this.particles.positions[posJ];
+            this.lineVertices[vertexOffset + 3] = this.particles.positions[posJ + 1];
+
+            const colorOffset = this.lineCount * 8;
+            const stableA = Math.max(0.02, finalA * 0.8);
+            this.lineColors[colorOffset] = this.lineTint[0];
+            this.lineColors[colorOffset + 1] = this.lineTint[1];
+            this.lineColors[colorOffset + 2] = this.lineTint[2];
+            this.lineColors[colorOffset + 3] = stableA;
+            this.lineColors[colorOffset + 4] = this.lineTint[0];
+            this.lineColors[colorOffset + 5] = this.lineTint[1];
+            this.lineColors[colorOffset + 6] = this.lineTint[2];
+            this.lineColors[colorOffset + 7] = stableA;
+
+            this.lineCount++;
+          }
+        }
+      }
+    });
+
+    const smoothing = 0.12;
+    for (let i = 0; i < n; i++) {
+      const propOffset = i * 6;
+      this.particles.properties[propOffset + 5] =
+        this.particles.properties[propOffset + 5] * (1 - smoothing) +
+        this.connectionCounts[i] * smoothing;
+
+      const posOffset = i * 2;
+      this.renderPositions[posOffset] = this.particles.positions[posOffset];
+      this.renderPositions[posOffset + 1] = this.particles.positions[posOffset + 1];
+
+      const size = this.particles.properties[propOffset];
+      const opacity = this.particles.properties[propOffset + 1];
+      const life = this.particles.properties[propOffset + 3];
+      const energy = this.particles.properties[propOffset + 4];
+      const smoothedConn = this.particles.properties[propOffset + 5];
+
+      const dynamicSize = size + Math.sin(life) * 0.2 * energy;
+      const connectionGlow = Math.min(1.5, 0.8 + smoothedConn * 0.15);
+      const energyGlow = Math.max(0.1, Math.min(1.5, 0.8 + energy * 0.4));
+      const bodyOpacity = Math.max(0, Math.min(1, (opacity / 255) * connectionGlow * energyGlow));
+
+      this.renderSizes[i] = dynamicSize * (2 + energy);
+
+      const colorOffset = i * 3;
+      const renderColorOffset = i * 4;
+      this.renderColors[renderColorOffset] = this.particles.colors[colorOffset] / 255;
+      this.renderColors[renderColorOffset + 1] = this.particles.colors[colorOffset + 1] / 255;
+      this.renderColors[renderColorOffset + 2] = this.particles.colors[colorOffset + 2] / 255;
+      this.renderColors[renderColorOffset + 3] = bodyOpacity;
+    }
   }
 
   private initializeParticles(

@@ -1,4 +1,21 @@
-import type { Theme } from '@mui/material';
+// Simple theme interface to replace Material-UI dependency
+interface Theme {
+  palette: {
+    mode: 'light' | 'dark';
+    primary: {
+      main: string;
+      light: string;
+    };
+    secondary: {
+      main: string;
+      light: string;
+    };
+    background: {
+      default: string;
+      paper: string;
+    };
+  };
+}
 
 export interface ParticleSimConfig {
   particleCount: number;
@@ -8,10 +25,6 @@ export interface ParticleSimConfig {
   connectionThreshold: number;
 }
 
-/**
- * Preset densities for particle simulation. Use these when selecting
- * how many particles / how dense the scene should be.
- */
 export const ParticleDensity = {
   Subtle: 'subtle',
   Balanced: 'balanced',
@@ -24,11 +37,11 @@ export const PHYSICS = {
   FRICTION: 0.998,
   WANDER_STRENGTH: 0.012,
   PERIODIC_STRENGTH: 0.008,
-  MOUSE_REPEL_STRENGTH: 0.25,
+  MOUSE_REPEL_STRENGTH: 0.6,
   PARTICLE_REPEL_RADIUS: 30,
   PARTICLE_REPEL_STRENGTH: 0.04,
   MIN_SPEED: 0.01,
-  MAX_SPEED: 0.22,
+  MAX_SPEED: 0.18,
   LIFE_INCREMENT: 0.03,
   OPACITY_LERP_SPEED: 0.03,
 } as const;
@@ -53,7 +66,7 @@ export const getConfig = (
       particleCount: Math.max(60, Math.floor(base * presetFactor)),
       maxDistance: 100,
       mouseRadius: 80,
-      baseSpeed: 0.22,
+      baseSpeed: 0.12,
       connectionThreshold: 2,
     };
   } else if (width <= 1200) {
@@ -62,7 +75,7 @@ export const getConfig = (
       particleCount: Math.max(100, Math.floor(base * presetFactor)),
       maxDistance: 100,
       mouseRadius: 100,
-      baseSpeed: 0.22,
+      baseSpeed: 0.12,
       connectionThreshold: 3,
     };
   } else if (width <= 1920) {
@@ -71,7 +84,7 @@ export const getConfig = (
       particleCount: Math.max(150, Math.floor(base * presetFactor)),
       maxDistance: 100,
       mouseRadius: 120,
-      baseSpeed: 0.22,
+      baseSpeed: 0.12,
       connectionThreshold: 4,
     };
   } else {
@@ -80,7 +93,7 @@ export const getConfig = (
       particleCount: Math.max(200, Math.floor(base * presetFactor)),
       maxDistance: 120,
       mouseRadius: 150,
-      baseSpeed: 0.32,
+      baseSpeed: 0.18,
       connectionThreshold: 5,
     };
   }

@@ -33,7 +33,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ sectionRef, contactRef
   const handleContactClick = () => {
     contactRef?.current?.scrollIntoView({ behavior: 'smooth' });
   };
-
+  console.log('HeroSection rendered');
   return (
     <Section sectionRef={sectionRef} sectionId="hero">
       <Box sx={contentContainerStyles} className="hero-content-layout">
