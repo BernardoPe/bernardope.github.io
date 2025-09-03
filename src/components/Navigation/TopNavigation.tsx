@@ -42,7 +42,7 @@ export const TopNavigation: React.FC<TopNavigationProps> = ({ sections }) => {
   const navBoxStyles = {
     display: 'flex',
     alignItems: 'center',
-    gap: SPACING.sm, // Reduced from SPACING.lg to bring items closer
+    gap: SPACING.sm,
     flex: 1,
   };
 

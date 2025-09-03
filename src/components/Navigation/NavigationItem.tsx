@@ -24,6 +24,7 @@ export const NavigationItem = React.memo<NavigationItemProps>(
         minWidth: 'auto',
         color: isActive ? theme.palette.primary.main : alpha(theme.palette.text.primary, 0.7),
         backgroundColor: isActive ? alpha(theme.palette.primary.main, 0.1) : 'transparent',
+        '&:focus': { outline: 'none', boxShadow: 'none' },
         '&:hover': {
           backgroundColor: isActive
             ? alpha(theme.palette.primary.main, 0.15)
@@ -45,7 +46,13 @@ export const NavigationItem = React.memo<NavigationItemProps>(
     );
 
     return (
-      <Button onClick={onClick} sx={buttonStyles} startIcon={<Icon sx={iconStyles} />}>
+      <Button
+        onClick={onClick}
+        sx={{
+          ...buttonStyles,
+        }}
+        startIcon={<Icon sx={iconStyles} />}
+      >
         {title}
       </Button>
     );
