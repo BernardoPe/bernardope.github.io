@@ -84,7 +84,6 @@ export class GpuRenderer {
     gl2.uniform2f(mouseUniform, params.mouseX, params.mouseY);
     gl2.uniform1f(mouseActiveUniform, params.mouseActive ? 1 : 0);
 
-    // Type assertion for private config access
     const simulationWithConfig = this._simulationRef.current as {
       config?: ParticleSimConfig;
     } | null;

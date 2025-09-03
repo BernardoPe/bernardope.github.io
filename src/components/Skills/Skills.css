@@ -291,7 +291,7 @@
   .skill-card {
     width: 400px;
     flex: 0 0 400px;
-    min-height: 480px;
+    min-height: 650px !important;
   }
 
   .skill-card-title {
