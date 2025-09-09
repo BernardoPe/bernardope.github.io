@@ -1,18 +1,18 @@
-import { useCallback, useState, useEffect, type RefObject } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { useArrowNavigation } from './useArrowNavigation';
 import { useScrollSectionTracker } from './useScrollSectionTracker';
 
 interface UseNavigationOptions {
-  sectionRefs: RefObject<HTMLDivElement | null>[];
+  sectionIds: string[];
   initialIndex?: number;
   offset?: number;
 }
 
-export const useNavigation = ({ sectionRefs, initialIndex = 0 }: UseNavigationOptions) => {
-  const totalSections = sectionRefs.length;
+export const useNavigation = ({ sectionIds, initialIndex = 0 }: UseNavigationOptions) => {
+  const totalSections = sectionIds.length;
 
   const observedActive = useScrollSectionTracker({
-    sectionRefs,
+    sectionIds,
   });
 
   const [currentSection, setCurrentSection] = useState<number>(initialIndex);
@@ -20,10 +20,10 @@ export const useNavigation = ({ sectionRefs, initialIndex = 0 }: UseNavigationOp
   const navigateTo = useCallback(
     (index: number) => {
       if (index < 0 || index >= totalSections) return;
-      const element = sectionRefs[index].current;
+      const element = document.getElementById(sectionIds[index]);
       element?.scrollIntoView({ behavior: 'smooth' });
     },
-    [sectionRefs, totalSections]
+    [sectionIds, totalSections]
   );
 
   useArrowNavigation({

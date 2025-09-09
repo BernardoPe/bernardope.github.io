@@ -46,8 +46,8 @@ export const TopNavigation: React.FC<TopNavigationProps> = ({ sections }) => {
     flex: 1,
   };
 
-  const sectionRefs = sections.map((section) => section.ref);
-  const { currentSection, navigateTo } = useNavigation({ sectionRefs });
+  const sectionIds = sections.map((section) => section.id);
+  const { currentSection, navigateTo } = useNavigation({ sectionIds });
 
   return (
     <AppBar position="static" sx={appBarStyles}>

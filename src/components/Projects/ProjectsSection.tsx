@@ -1,16 +1,11 @@
 import React from 'react';
-import { Box } from '@mui/material';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from '../Fade';
 import { Section } from '../Section';
 import { ProjectCard } from './ProjectCard';
 import { data } from '../../data';
 import './Projects.css';
 
-interface ProjectsSectionProps {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}
-
-export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ sectionRef }) => {
+export const ProjectsSection: React.FC = () => {
   const sortedProjects = [...data.projects].sort((a, b) => {
     if (a.featured && !b.featured) return -1;
     if (!a.featured && b.featured) return 1;
@@ -21,16 +16,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ sectionRef }) 
     <Section
       title="Projects"
       subtitle="A showcase of my development work and contributions"
-      sectionRef={sectionRef}
       className="projects-section"
       sectionId="projects"
     >
-      <Fade direction="up" delay={100} duration={600} triggerOnce>
-        <Box className="projects-grid">
-          {sortedProjects.map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
-          ))}
-        </Box>
+      <Fade direction="up" delay={200} duration={400} triggerOnce className="projects-grid">
+        {sortedProjects.map((project, index) => (
+          <ProjectCard key={project.title} project={project} index={index} />
+        ))}
       </Fade>
     </Section>
   );

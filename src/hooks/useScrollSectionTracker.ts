@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
-import type { RefObject } from 'react';
 
 interface ScrollSectionTrackerOptions {
-  sectionRefs: RefObject<HTMLDivElement | null>[];
+  sectionIds: string[];
   rootMargin?: string;
   threshold?: number;
 }
 
 export const useScrollSectionTracker = ({
-  sectionRefs,
-  rootMargin = '-20% 0px -20% 0px',
+  sectionIds,
+  rootMargin = '-10% 0px -10% 0px',
   threshold = 0.3,
 }: ScrollSectionTrackerOptions) => {
   const [activeSection, setActiveSection] = useState<number>(0);
@@ -25,7 +24,7 @@ export const useScrollSectionTracker = ({
       const intersectingSections = entries
         .filter((entry) => entry.isIntersecting)
         .map((entry) => {
-          const index = sectionRefs.findIndex((ref) => ref.current === entry.target);
+          const index = sectionIds.findIndex((id) => id === entry.target.id);
           return {
             index,
             intersectionRatio: entry.intersectionRatio,
@@ -57,21 +56,23 @@ export const useScrollSectionTracker = ({
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    sectionRefs.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
       }
     });
 
     return () => {
-      sectionRefs.forEach((ref) => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          observer.unobserve(element);
         }
       });
       observer.disconnect();
     };
-  }, [sectionRefs, rootMargin, threshold]);
+  }, [sectionIds, rootMargin, threshold]);
 
   return activeSection;
 };

@@ -39,8 +39,8 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({ sections }) 
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  const sectionRefs = sections.map((section) => section.ref);
-  const { currentSection, navigateTo } = useNavigation({ sectionRefs });
+  const sectionIds = sections.map((section) => section.id);
+  const { currentSection, navigateTo } = useNavigation({ sectionIds });
 
   const handleSectionClick = (index: number) => {
     navigateTo(index);

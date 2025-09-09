@@ -1,24 +1,19 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from '../Fade';
 import { Section } from '../Section';
 import { EducationCard } from './EducationCard';
 import { data } from '../../data';
 import './Education.css';
 
-interface EducationSectionProps {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}
-
-export const EducationSection: React.FC<EducationSectionProps> = ({ sectionRef }) => {
+export const EducationSection: React.FC = () => {
   return (
     <Section
       title="Education"
       subtitle="My educational journey and academic achievements"
-      sectionRef={sectionRef}
       centerContent={false}
       sectionId="education"
     >
-      <Fade direction="up" delay={100} duration={600} triggerOnce>
+      <Fade direction="up" delay={200} duration={400} triggerOnce>
         {data.education.map((education, idx) => (
           <EducationCard key={idx} education={education} />
         ))}

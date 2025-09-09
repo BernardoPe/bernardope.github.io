@@ -10,9 +10,9 @@ import { EducationSection } from './components/Education/EducationSection';
 import { ExperienceSection } from './components/Experience/ExperienceSection';
 import { ProjectsSection } from './components/Projects/ProjectsSection';
 import { ContactSection } from './components/Contact/ContactSection';
-import { InteractiveBackground } from './components/Background/InteractiveBackground';
 import { SkillsSection } from './components/Skills/SkillsSection';
 import { useIsMobile } from './hooks/useMediaQuery';
+import { InteractiveBackground } from './components/Background/InteractiveBackground';
 
 export interface Section {
   id: string;
@@ -41,18 +41,18 @@ const Content: React.FC = () => {
   return (
     <>
       <CssBaseline />
-      <InteractiveBackground />
       <ThemeToggle />
+      <InteractiveBackground />
       <Box sx={{ display: 'flex' }}>
         {!isMobile && <TopNavigation sections={sections} />}
         {isMobile && <MobileNavigation sections={sections} />}
         <Box component="main" sx={{ flexGrow: 1 }}>
-          <HeroSection sectionRef={heroRef} contactRef={contactRef} />
-          <SkillsSection sectionRef={aboutRef} />
-          <ExperienceSection sectionRef={experienceRef} />
-          <EducationSection sectionRef={educationRef} />
-          <ProjectsSection sectionRef={projectsRef} />
-          <ContactSection sectionRef={contactRef} />
+          <HeroSection />
+          <SkillsSection />
+          <ExperienceSection />
+          <EducationSection />
+          <ProjectsSection />
+          <ContactSection />
         </Box>
       </Box>
     </>

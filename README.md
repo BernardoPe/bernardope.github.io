@@ -12,7 +12,6 @@ Visit the live site: [bernardope.github.io](https://bernardope.github.io)
 - **UI Components**: Material-UI (MUI) v7
 - **Build Tool**: Vite
 - **Styling**: CSS with Material-UI theming
-- **Animations**: react-awesome-reveal
 - **Icons**: Material-UI Icons
 - **Deployment**: GitHub Pages
 - **Linting**: ESLint

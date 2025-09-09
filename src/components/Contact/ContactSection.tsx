@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from '../Fade';
 import {
   Email as EmailIcon,
   LinkedIn as LinkedInIcon,
@@ -10,11 +10,7 @@ import { ContactCard } from './ContactCard';
 import { contactMethods } from '../../data';
 import './Contact.css';
 
-interface ContactSectionProps {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}
-
-export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) => {
+export const ContactSection: React.FC = () => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'Email':
@@ -30,13 +26,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ sectionRef }) =>
 
   return (
     <Section
-      sectionRef={sectionRef}
       className="contact-section"
       title="Get In Touch"
       subtitle="I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!"
       sectionId="contact"
     >
-      <Fade direction="up" delay={100} duration={600} triggerOnce>
+      <Fade direction="up" delay={200} duration={400} triggerOnce>
         <div className="contact-methods">
           {contactMethods.map((contact) => (
             <ContactCard

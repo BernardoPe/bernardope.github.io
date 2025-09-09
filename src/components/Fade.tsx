@@ -17,7 +17,7 @@ export const Fade: React.FC<FadeProps> = ({
   children,
   direction = 'up',
   delay = 0,
-  duration = 600,
+  duration = 400,
   distance = '30px',
   className = '',
   triggerOnce = true,

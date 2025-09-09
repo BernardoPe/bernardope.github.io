@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from '../Fade';
 import { HeroContent } from './HeroContent';
 import { HeroActions } from './HeroActions';
 import { HeroAvatar } from './HeroAvatar';
@@ -8,12 +8,7 @@ import { data } from '../../data';
 import './Hero.css';
 import { Section } from '../Section';
 
-interface HeroSectionProps {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-  contactRef?: React.RefObject<HTMLDivElement | null>;
-}
-
-export const HeroSection: React.FC<HeroSectionProps> = ({ sectionRef, contactRef }) => {
+export const HeroSection: React.FC = () => {
   const contentContainerStyles = {
     flexDirection: {
       xs: 'column',
@@ -31,24 +26,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ sectionRef, contactRef
   };
 
   const handleContactClick = () => {
-    contactRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
   console.log('HeroSection rendered');
   return (
-    <Section sectionRef={sectionRef} sectionId="hero">
+    <Section sectionId="hero">
       <Box sx={contentContainerStyles} className="hero-content-layout">
-        <Fade direction="up" delay={100} duration={400} triggerOnce>
-          <Box className="hero-content-wrapper">
-            <HeroContent
-              greeting={data.hero.greeting}
-              name={data.hero.name}
-              title={data.hero.title}
-              description={data.hero.description}
-            />
-            <HeroActions onDownloadCV={handleDownloadCV} onContactClick={handleContactClick} />
-          </Box>
+        <Fade
+          direction="up"
+          delay={100}
+          duration={400}
+          triggerOnce
+          className="hero-content-wrapper"
+        >
+          <HeroContent
+            greeting={data.hero.greeting}
+            name={data.hero.name}
+            title={data.hero.title}
+            description={data.hero.description}
+          />
+          <HeroActions onDownloadCV={handleDownloadCV} onContactClick={handleContactClick} />
         </Fade>
-        <Fade direction="up" delay={100} duration={600} triggerOnce>
+        <Fade direction="up" delay={100} duration={400} triggerOnce>
           <HeroAvatar src="/assets/images/me.jpg" alt="" />
         </Fade>
       </Box>

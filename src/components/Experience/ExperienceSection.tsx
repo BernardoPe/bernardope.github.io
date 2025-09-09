@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
-import { Box } from '@mui/material';
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from '../Fade';
 import { Section } from '../Section';
 import { ExperienceTimeline } from './ExperienceTimeline';
 import { ExperienceCard } from './ExperienceCard';
@@ -8,11 +7,7 @@ import { data } from '../../data';
 import type { TimelineNode } from './types';
 import './Experience.css';
 
-interface ExperienceSectionProps {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}
-
-export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ sectionRef }) => {
+export const ExperienceSection: React.FC = () => {
   const cardsRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const timelineNodes: TimelineNode[] = data.experience.map((exp) => ({
@@ -47,30 +42,31 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ sectionRef
     <Section
       title="Work Experience"
       subtitle="My professional journey and career milestones"
-      sectionRef={sectionRef}
       customStyles={containerStyles}
       centerContent={false}
       sectionId="experience"
     >
-      <Fade direction="up" delay={100} duration={600} triggerOnce>
-        <Box className="experience-timeline-container">
-          <ExperienceTimeline nodes={timelineNodes} onNodeClick={handleNodeClick} />
-        </Box>
+      <Fade direction="up" delay={200} duration={400} triggerOnce className="timeline-container">
+        <ExperienceTimeline nodes={timelineNodes} onNodeClick={handleNodeClick} />
       </Fade>
 
-      <Fade direction="up" delay={100} duration={600} triggerOnce>
-        <Box className="experience-cards-container">
-          {data.experience.map((experience) => (
-            <div
-              key={experience.id}
-              ref={(el) => {
-                if (el) cardsRefs.current[experience.id] = el;
-              }}
-            >
-              <ExperienceCard experience={experience} />
-            </div>
-          ))}
-        </Box>
+      <Fade
+        direction="up"
+        delay={200}
+        duration={400}
+        triggerOnce
+        className="experience-cards-container"
+      >
+        {data.experience.map((experience) => (
+          <div
+            key={experience.id}
+            ref={(el) => {
+              if (el) cardsRefs.current[experience.id] = el;
+            }}
+          >
+            <ExperienceCard experience={experience} />
+          </div>
+        ))}
       </Fade>
     </Section>
   );

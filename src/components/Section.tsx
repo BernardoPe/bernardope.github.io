@@ -6,7 +6,6 @@ interface SectionProps {
   title?: string;
   subtitle?: string;
   children: React.ReactNode;
-  sectionRef: React.RefObject<HTMLDivElement | null>;
   className?: string;
   contentClassName?: string;
   showTitleGradient?: boolean;
@@ -19,7 +18,6 @@ export const Section: React.FC<SectionProps> = ({
   title,
   subtitle,
   children,
-  sectionRef,
   className = '',
   contentClassName = '',
   showTitleGradient = true,
@@ -53,20 +51,8 @@ export const Section: React.FC<SectionProps> = ({
     alignItems: centerContent ? 'center' : 'stretch',
   };
 
-  const combinedRef = (element: HTMLDivElement | null) => {
-    if (sectionRef) {
-      (sectionRef as React.MutableRefObject<HTMLDivElement | null>).current = element;
-    }
-  };
-
   return (
-    <Box
-      ref={combinedRef}
-      sx={sectionStyles}
-      component="section"
-      className={`section ${className}`}
-      data-section-id={sectionId}
-    >
+    <Box sx={sectionStyles} component="section" className={`section ${className}`} id={sectionId}>
       {title && (
         <Typography className="section-title" variant="h2" sx={titleStyles}>
           {title}
